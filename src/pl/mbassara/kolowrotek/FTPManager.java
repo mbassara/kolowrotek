@@ -15,14 +15,15 @@ import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import it.sauronsoftware.ftp4j.*;
-
 import javax.swing.SwingWorker;
+
+import com.enterprisedt.net.ftp.FTPClient;
+import com.enterprisedt.net.ftp.FTPException;
+import com.enterprisedt.net.ftp.FTPTransferType;
 
 public class FTPManager extends SwingWorker<Void, Void> {
 	
-	private void generateXML(MyFTPClient ftp, String dirPath, int numberOfImages)
-	throws IllegalStateException, FTPIllegalReplyException, FTPException, FTPDataTransferException, FTPAbortedException {
+	private void generateXML(FTPClient ftp, String dirPath, int numberOfImages) throws FTPException {
 		String content = XMLbeginning;
 		for (int i = 1; i <= numberOfImages; i++){
 			content += "\n  <image imageURL=\"images/" + i;
@@ -41,18 +42,14 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			out.flush();
 			out.close();
 			
-			File file = new File("tmp");
-			ftp.upload(file);
-			ftp.rename(file.getName(), dirPath + "/gallery.xml");
+			ftp.put("tmp", dirPath + "/gallery.xml");
 			
 		} catch (IOException e) {
 			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
 		}
 	}
 	
-	private void generatePHP(MyFTPClient ftp, String dirPath, String partyName, String year)
-	throws IllegalStateException, FTPIllegalReplyException, FTPException, FTPDataTransferException, FTPAbortedException
-	 {
+	private void generatePHP(FTPClient ftp, String dirPath, String partyName, String year) throws FTPException {
 		
 		String content = PHPbeginning;
 		content += partyName;
@@ -69,9 +66,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			out.flush();
 			out.close();
 			
-			File file = new File("tmp");
-			ftp.upload(file);
-			ftp.rename(file.getName(), dirPath + "/index.php");
+			ftp.put("tmp", dirPath + "/index.php");
 			
 		} catch (IOException e) {
 			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
@@ -79,20 +74,17 @@ public class FTPManager extends SwingWorker<Void, Void> {
 	}
 	
 	// generate images, thumbs and returns number of processed images
-	private int generateImages(MyFTPClient ftp, String dirName, String year, File[] files)
-	throws FTPException, IllegalStateException, IOException, FTPIllegalReplyException, FTPDataTransferException, FTPAbortedException{
+	private int generateImages(FTPClient ftp, String dirName, String year, File[] files) throws IOException, FTPException {
 		
 		if(files.length == 0 || files[0] == null)
 			return -1;
-		ftp.createDirectory(dirName);
-		ftp.createDirectory(dirName + "/images");
-		ftp.createDirectory(dirName + "/thumbs");
+		ftp.mkdir(dirName);
+		ftp.mkdir(dirName + "/images");
+		ftp.mkdir(dirName + "/thumbs");
 		
 		String filesDirPath = files[0].getCanonicalPath().substring(0, files[0].getCanonicalPath().lastIndexOf(File.separator) + 1);
 		File tmpFile = new File(filesDirPath + "tmp");
 		File result;
-		
-		TransferListener transferListener = new TransferListener();
 		
 		int i = 1;
 		String fileExtension;
@@ -101,28 +93,23 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			setProgress((int) (currentProgress += 100.0 / taskLength));
 			fileExtension = file.getName().substring(file.getName().lastIndexOf(".") + 1);
 			if(fileExtension.equals("jpg") | fileExtension.equals("JPG") | fileExtension.equals("jpeg") | fileExtension.equals("JPEG")){
-				ftp.changeDirectory(dirName + "/images");
+//				ftp.changeDirectory(dirName + "/images");
 				firePropertyChange("progress info", null, file.getName() + " - wysyłanie na serwer");
 				if((result = TempImageResizer.resizeImage(file, tmpFile, 1200, manLogHandler)) == null){
 						firePropertyChange("progress info", null, file.getName() + "błąd przy wysyłaniu pliku\t" + file.getCanonicalPath());
 						continue;
 				}
-				transferListener.reset();
-				ftp.upload(result, transferListener);
-				manLogger.log(Level.INFO, "Transfer state: " + transferListener.getState() + 
-									", bytes send: " + transferListener.getTransferred());
+				ftp.put(result.getCanonicalPath(), dirName + "/images/"+ i + ".jpg");
 				
-				ftp.rename("tmp", i + ".jpg");
 				firePropertyChange("progress info", null, file.getName() + " - zapisany jako\t\t"+ dirName + "/images/" + i + ".jpg");
 								
-				ftp.changeDirectory(dirName + "/thumbs");
+//				ftp.changeDirectory(dirName + "/thumbs");
 				firePropertyChange("progress info", null, file.getName() + " - tworzenie miniatury");
 				if((result = TempImageResizer.resizeImage(file, tmpFile, 75, manLogHandler)) == null){
 					firePropertyChange("progress info", null, file.getName() + "błąd przy wysyłaniu miniaturki\t" + file.getCanonicalPath());
 					continue;
 				}
-				ftp.upload(result);
-				ftp.rename("tmp", i + ".jpg");
+				ftp.put(result.getCanonicalPath(), dirName + "/thumbs/" + i + ".jpg");
 				firePropertyChange("progress info", null, file.getName() + " - miniatura zapisana jako \t"+ dirName + "/thumbs/" + i + ".jpg\n");
 
 				i++;
@@ -138,13 +125,12 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		return i - 1; 
 	}
 	
-	private void addPartyToYearIndexFile(MyFTPClient ftp, String dirName, String partyName)
-	throws IllegalStateException, FTPIllegalReplyException, FTPException, FTPDataTransferException, FTPAbortedException, FileNotFoundException, IOException {
+	private void addPartyToYearIndexFile(FTPClient ftp, String dirName, String partyName) throws FTPException, IOException {
 		final String partyDirName = dirName.substring(11); 
 		final String yearDirName = dirName.substring(0, 10);
 		
 		File file = new File("tmp");
-		ftp.download(yearDirName + "/index.php", file);
+		ftp.get(file.getCanonicalPath(), yearDirName + "/index.php");
 		
 		String tmp, indexContent = "";
 		
@@ -172,8 +158,8 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			out.flush();
 			out.close();
 			
-			ftp.upload(file);
-			ftp.rename(file.getName(), yearDirName + "/index.php");
+			ftp.put(file.getCanonicalPath(), yearDirName + "/index.php");
+			file.delete();
 			
 		} catch (FileNotFoundException e) {
 			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
@@ -182,11 +168,10 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		}
 	}
 	
-	private String removePartyFromYearIndexFile(MyFTPClient ftp, String yearDirName, String partyName)
-	throws IllegalStateException, FTPIllegalReplyException, FTPException, FTPDataTransferException, FTPAbortedException, FileNotFoundException, IOException {
+	private String removePartyFromYearIndexFile(FTPClient ftp, String yearDirName, String partyName) throws FTPException, IOException {
 		
 		File file = new File("tmp");
-		ftp.download(yearDirName + "/index.php", file);
+		ftp.get(file.getCanonicalPath(), yearDirName + "/index.php");
 		
 		
 		String tmp, resultString = null;
@@ -221,8 +206,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 				firePropertyChange("error", null, "partyNotFound");
 			
 			file = new File("tmp2");
-			ftp.upload(file);
-			ftp.rename(file.getName(), yearDirName + "/index.php");
+			ftp.put(file.getCanonicalPath(), yearDirName + "/index.php");
 			return resultString;
 			
 		} catch (FileNotFoundException e) {
@@ -239,20 +223,21 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		dirName = "/" + year.substring(0, 4) + "-" + year.substring(5, 9) + "/" + dirName;
 		manLogger.log(Level.INFO, "in function generateAll()");
 		try {
-			if(ftp == null){
+			if(ftp == null)
 				ftp = new MyFTPClient();
-				if(ftpLogHandler != null)
-					ftp.addCommunicationListener(new CommunicationListener(ftpLogHandler));
-			}
+			
 			setProgress(0);
 			firePropertyChange("progress info", null, "Łączenie z serwerem FTP.");
 			
-			ftp.connect("ftp.gim2brzeszcze.o12.pl");
+			ftp.setRemoteHost("ftp.gim2brzeszcze.o12.pl");
+			ftp.setRemotePort(21);
+			ftp.connect();
 			ftp.login("galeriakolowrotka@gim2brzeszcze.o12.pl", password);
 
 			setProgress((int) (currentProgress += 100.0 / taskLength));
 			firePropertyChange("progress info", null, "Połączono.");
-			
+
+			ftp.setType(FTPTransferType.BINARY);
 			int processedImages = generateImages(ftp, dirName, year, files);
 			setProgress((int) (currentProgress += 100.0 / taskLength));
 			firePropertyChange("progress info", null, "Zdjęcia wygenerowane.");
@@ -276,30 +261,25 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			if(this.manLogHandler != null){
 				manLogHandler.flush();
 				file = manLogHandler.getFile();
-				ftp.upload(file);
-				ftp.rename(file.getName(), "/logs/" + date + "_" + time + "_FTPManager.log");
+				ftp.put(file.getCanonicalPath(), "/logs/" + date + "_" + time + "_FTPManager.log");
 			}
 			if(this.ftpLogHandler != null){
 				ftpLogHandler.flush();
 				file = ftpLogHandler.getFile();
-				ftp.upload(file);
-				ftp.rename(file.getName(), "/logs/" + date + "_" + time + "_FTPServer.log");
+				ftp.put(file.getCanonicalPath(), "/logs/" + date + "_" + time + "_FTPServer.log");
 			}
 
-			ftp.disconnect(true);
+			ftp.quit();
 
 			
 			setProgress(100);	// Forcing 100%
 			firePropertyChange("progress info", null, "Gotowe.");
 		} catch (FTPException e) {
 			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
-			if(e.getCode() == 530)	//Login authentication failed
+			if(e.getReplyCode() == 530)	//Login authentication failed
 				firePropertyChange("error", "", "Login authentication failed");
-			else if(e.getCode() == 550)		// can't create dir: file exists
+			else if(e.getReplyCode() == 550)		// can't create dir: file exists
 				firePropertyChange("error", null, "dirExists");
-			this.doCancel(true);
-		} catch (FTPDataTransferException e) {
-			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
 			this.doCancel(true);
 		} catch (IOException e) {
 			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
@@ -314,27 +294,30 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		String dirName = "/" + year.substring(0, 4) + "-" + year.substring(5, 9);	// year album directory
 		
 		try {
-			if(ftp == null){
+			if(ftp == null)
 				ftp = new MyFTPClient();
-				if(ftpLogHandler != null)
-					ftp.addCommunicationListener(new CommunicationListener(ftpLogHandler));
-			}
 			
 			setProgress(0);
 			firePropertyChange("progress info", null, "Łączenie z serwerem FTP.");
-
-			ftp.connect("ftp.gim2brzeszcze.o12.pl");
+			
+			ftp.setRemoteHost("ftp.gim2brzeszcze.o12.pl");
+			ftp.setRemotePort(21);
+			ftp.connect();
 			ftp.login("galeriakolowrotka@gim2brzeszcze.o12.pl", password);
 			
+
 			setProgress((int) (currentProgress += 100.0 / taskLength));
 			firePropertyChange("progress info", null, "Połączono.");
-			
+
+			ftp.setType(FTPTransferType.BINARY);
 			dirName = removePartyFromYearIndexFile(ftp, dirName, partyName);
 			setProgress((int) (currentProgress += 100.0 / taskLength));
 			firePropertyChange("progress info", null, "Plik\t\t" + "/" + dirName.substring(1, 10) + "/index.php uaktualniony.");
 			
 			firePropertyChange("progress info", null, "Usuwanie folderu\t" + dirName + " z zawartością.");
+			
 			ftp.deleteDirRecursively(dirName);
+			
 			setProgress((int) (currentProgress += 100.0 / taskLength));
 			firePropertyChange("progress info", null, "Usunięto folder\t" + dirName + ".");
 			
@@ -345,17 +328,15 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			if(this.manLogHandler != null){
 				manLogHandler.flush();
 				file = manLogHandler.getFile();
-				ftp.upload(file);
-				ftp.rename(file.getName(), "/logs/" + date + "_" + time + "_FTPManager.log");
+				ftp.put(file.getCanonicalPath(), "/logs/" + date + "_" + time + "_FTPManager.log");
 			}
 			if(this.ftpLogHandler != null){
 				ftpLogHandler.flush();
 				file = ftpLogHandler.getFile();
-				ftp.upload(file);
-				ftp.rename(file.getName(), "/logs/" + date + "_" + time + "_FTPServer.log");
+				ftp.put(file.getCanonicalPath(), "/logs/" + date + "_" + time + "_FTPServer.log");
 			}
 
-			ftp.disconnect(true);
+			ftp.quit();
 
 			if((new File("tmp")).delete())
 				firePropertyChange("progress info", null, "Tymczasowy plik tmp usunięty.");
@@ -366,11 +347,8 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			firePropertyChange("progress info", null, "Gotowe.");
 		} catch (FTPException e) {
 			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
-			if(e.getCode() == 530)	//Login authentication failed
+			if(e.getReplyCode() == 530)	//Login authentication failed
 				firePropertyChange("error", "", "Login authentication failed");
-			this.doCancel(true);
-		} catch (FTPDataTransferException e) {
-			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
 			this.doCancel(true);
 		} catch (IOException e) {
 			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
@@ -478,9 +456,9 @@ public class FTPManager extends SwingWorker<Void, Void> {
 	}
 	
 	public boolean doCancel(boolean mayInterruptIfRunning) {
-		if(ftp != null && ftp.isConnected())
+		if(ftp != null && ftp.connected())
 			try {
-				ftp.disconnect(true);
+				ftp.quitImmediately();
 			} catch (Exception e) {
 				manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
 			}
