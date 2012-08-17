@@ -458,8 +458,6 @@ public class FTPManager extends SwingWorker<Void, Void> {
 							FTPManagerGUI.SERVER_LOG_FILE };
 		
 		Mail.sendFilesToMe(logFiles);
-		for(File file : logFiles)
-			file.deleteOnExit();
 		
 		return null;
 	}

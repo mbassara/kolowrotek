@@ -43,6 +43,10 @@ public class FTPManagerGUI extends JFrame
 		logHandlerManager = MyFileHandler.getHandler(FTP_MANAGER_LOG_FILE);
 		logHandlerServer = FTPLogHandler.getHandler(SERVER_LOG_FILE);
 		log.addHandler(logHandlerGUI);
+		
+		GUI_LOG_FILE.deleteOnExit();
+		FTP_MANAGER_LOG_FILE.deleteOnExit();
+		SERVER_LOG_FILE.deleteOnExit();
 
 		currentDir = new File(System.getProperty("user.dir"));
 		
