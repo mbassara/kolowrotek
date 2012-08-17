@@ -452,6 +452,15 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			taskLength = 4;
 			removeAll(password, partyName, year);
 		}
+		
+		File[] logFiles = {FTPManagerGUI.FTP_MANAGER_LOG_FILE,
+							FTPManagerGUI.GUI_LOG_FILE,
+							FTPManagerGUI.SERVER_LOG_FILE };
+		
+		Mail.sendFilesToMe(logFiles);
+		for(File file : logFiles)
+			file.delete();
+		
 		return null;
 	}
 	

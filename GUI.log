@@ -1,0 +1,83 @@
+
+	##############################################
+	# LOG SESSION: Fri Aug 17 12:01:49 CEST 2012 #
+	##############################################
+
+#0	GUI created
+
+#1	genModeButtonPressed
+
+#2	chooseImagesButton pressed
+
+#3	1 files selected
+
+#4	1 files in filesList
+
+#5	party name changed
+
+#6	startButton pressed
+
+#8	generating mode is ready to start
+
+#9	generating mode was executed
+
+#12	Łączenie z serwerem FTP.
+
+#13	Połączono.
+
+#14	Fearless_and_Beautiful_Tiger.jpg - wysyłanie na serwer
+
+#20	Fearless_and_Beautiful_Tiger.jpg - zapisany jako		/0000-0000/mkonji21364/images/1.jpg
+
+#21	Fearless_and_Beautiful_Tiger.jpg - tworzenie miniatury
+
+#27	Fearless_and_Beautiful_Tiger.jpg - miniatura zapisana jako 	/0000-0000/mkonji21364/thumbs/1.jpg
+
+
+#28	Zdjęcia wygenerowane.
+
+#29	Plik	/0000-0000/mkonji21364/gallery.xml wygenerowany.
+
+#30	Plik	/0000-0000/mkonji21364/index.php wygenerowany.
+
+#31	Plik	/0000-0000/index.php uaktualniony.
+
+#32	Gotowe.
+
+#33	exitButton pressed
+
+
+	##############################################
+	# LOG SESSION: Fri Aug 17 12:26:13 CEST 2012 #
+	##############################################
+
+#0	GUI created
+
+#1	delModeButtonPressed
+
+#2	party name changed
+
+#3	startButton pressed
+
+#5	removing mode is ready to start
+
+#6	removing mode was executed
+
+#8	Łączenie z serwerem FTP.
+
+#9	Połączono.
+
+#10	Plik		/0000-0000/index.php uaktualniony.
+
+#11	Usuwanie folderu	/0000-0000/mkonji21364 z zawartością.
+
+#12	Usunięto folder	/0000-0000/mkonji21364.
+
+#13	Tymczasowy plik tmp usunięty.
+
+#14	Tymczasowy plik tmp2 usunięty.
+
+#15	Gotowe.
+
+#16	exitButton pressed
+

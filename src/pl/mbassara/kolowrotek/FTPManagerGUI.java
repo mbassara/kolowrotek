@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.File;
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -385,7 +384,7 @@ public class FTPManagerGUI extends JFrame implements ActionListener, DocumentLis
 	private MyHandler logHandlerServer = null;
 	private boolean enableFileLogger = false;
 	
-	private final File GUI_LOG_FILE			= new File("./GUI.log");
-	private final File FTP_MANAGER_LOG_FILE	= new File("./FTPManager.log");
-	private final File SERVER_LOG_FILE		= new File("./Server.log");
+	public static final File GUI_LOG_FILE			= new File("./GUI.log");
+	public static final File FTP_MANAGER_LOG_FILE	= new File("./FTPManager.log");
+	public static final File SERVER_LOG_FILE		= new File("./Server.log");
 }
