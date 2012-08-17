@@ -39,6 +39,10 @@ public class FTPManagerGUI extends JFrame implements ActionListener, DocumentLis
 	public FTPManagerGUI(){
 		super();
 		log = Logger.getLogger(FTPManagerGUI.class.getName());
+		logHandlerGUI = MyFileHandler.getHandler(GUI_LOG_FILE);
+		logHandlerManager = MyFileHandler.getHandler(FTP_MANAGER_LOG_FILE);
+		logHandlerServer = FTPLogHandler.getHandler(SERVER_LOG_FILE);
+		log.addHandler(logHandlerGUI);
 
 		currentDir = new File(System.getProperty("user.dir"));
 		
@@ -177,55 +181,50 @@ public class FTPManagerGUI extends JFrame implements ActionListener, DocumentLis
 				JFileChooser chooser = new JFileChooser(".");
 				File selectedFile = new File("./GUI.log");
 				chooser.setSelectedFile(selectedFile);
-				if(logHandlerGUI == null){
+
+				try {
 					if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
 						selectedFile = chooser.getSelectedFile();
-						logHandlerGUI = MyFileHandler.getHandler(selectedFile);
-						log.addHandler(logHandlerGUI);
-						try {
+						if(!selectedFile.getCanonicalPath().equals(GUI_LOG_FILE.getCanonicalPath())) {
+							logHandlerGUI = MyFileHandler.getHandler(selectedFile);
+							log.addHandler(logHandlerGUI);
 							log.log(Level.INFO, "GUI log file opened: " + selectedFile.getCanonicalPath());
-						} catch (IOException e1) {
-							log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e1));
 						}
 					}
-				}
-				if(logHandlerManager == null){
+				
 					String newPath = "";
-					try {
-						newPath = selectedFile.getCanonicalPath();
-						newPath = newPath.substring(0, newPath.lastIndexOf(File.separator) + 1);
-						newPath += "FTPManager.log";
-						selectedFile = new File(newPath);
-						chooser.setSelectedFile(selectedFile);
-						if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
-							selectedFile = chooser.getSelectedFile();
+					newPath = selectedFile.getCanonicalPath();
+					newPath = newPath.substring(0, newPath.lastIndexOf(File.separator) + 1);
+					newPath += "FTPManager.log";
+					selectedFile = new File(newPath);
+					chooser.setSelectedFile(selectedFile);
+					if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
+						selectedFile = chooser.getSelectedFile();
+						if(!selectedFile.getCanonicalPath().equals(FTP_MANAGER_LOG_FILE.getCanonicalPath())) {
 							logHandlerManager = MyFileHandler.getHandler(selectedFile);
 							log.log(Level.INFO, "Manager log file opened: " + selectedFile.getCanonicalPath());
 						}
-					} catch (IOException e1) {
-						log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e1));
 					}
-				}
-				if(logHandlerServer == null){
-					String newPath = "";
-					try {
-						newPath = selectedFile.getCanonicalPath();
-						newPath = newPath.substring(0, newPath.lastIndexOf(File.separator) + 1);
-						newPath += "FTPServer.log";
-						selectedFile = new File(newPath);
-						chooser.setSelectedFile(selectedFile);
-						if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
-							selectedFile = chooser.getSelectedFile();
+
+					newPath = "";
+					newPath = selectedFile.getCanonicalPath();
+					newPath = newPath.substring(0, newPath.lastIndexOf(File.separator) + 1);
+					newPath += "FTPServer.log";
+					selectedFile = new File(newPath);
+					chooser.setSelectedFile(selectedFile);
+					if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
+						selectedFile = chooser.getSelectedFile();
+						if(!selectedFile.getCanonicalPath().equals(SERVER_LOG_FILE.getCanonicalPath())) {
 							logHandlerServer = FTPLogHandler.getHandler(selectedFile);
 							log.log(Level.INFO, "Server log file opened: " + selectedFile.getCanonicalPath());
 						}
-						else{
-							logCheckBox.setSelected(false);
-							return;
-						}
-					} catch (IOException e1) {
-						log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e1));
 					}
+					else{
+						logCheckBox.setSelected(false);
+						return;
+					}
+				} catch (Exception e1) {
+					log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e1));
 				}
 			}
 			else {
@@ -385,4 +384,8 @@ public class FTPManagerGUI extends JFrame implements ActionListener, DocumentLis
 	private MyHandler logHandlerManager = null;
 	private MyHandler logHandlerServer = null;
 	private boolean enableFileLogger = false;
+	
+	private final File GUI_LOG_FILE			= new File("./GUI.log");
+	private final File FTP_MANAGER_LOG_FILE	= new File("./FTPManager.log");
+	private final File SERVER_LOG_FILE		= new File("./Server.log");
 }
