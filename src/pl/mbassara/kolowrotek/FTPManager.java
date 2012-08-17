@@ -263,11 +263,6 @@ public class FTPManager extends SwingWorker<Void, Void> {
 				file = manLogHandler.getFile();
 				ftp.put(file.getCanonicalPath(), "/logs/" + date + "_" + time + "_FTPManager.log");
 			}
-			if(this.ftpLogHandler != null){
-				ftpLogHandler.flush();
-				file = ftpLogHandler.getFile();
-				ftp.put(file.getCanonicalPath(), "/logs/" + date + "_" + time + "_FTPServer.log");
-			}
 
 			ftp.quit();
 
@@ -329,11 +324,6 @@ public class FTPManager extends SwingWorker<Void, Void> {
 				manLogHandler.flush();
 				file = manLogHandler.getFile();
 				ftp.put(file.getCanonicalPath(), "/logs/" + date + "_" + time + "_FTPManager.log");
-			}
-			if(this.ftpLogHandler != null){
-				ftpLogHandler.flush();
-				file = ftpLogHandler.getFile();
-				ftp.put(file.getCanonicalPath(), "/logs/" + date + "_" + time + "_FTPServer.log");
 			}
 
 			ftp.quit();
@@ -416,15 +406,13 @@ public class FTPManager extends SwingWorker<Void, Void> {
 	}
 	
 	// WORKER METHODS
-	public FTPManager(boolean mode, String password, String partyName, String year, File[] files, MyHandler manLogHandler, MyHandler ftpLogHandler){
+	public FTPManager(boolean mode, String password, String partyName, String year, File[] files, MyHandler manLogHandler){
 		super();
 		manLogger = Logger.getLogger(FTPManager.class.getName());
 		if(manLogHandler != null){
 			this.manLogHandler = manLogHandler;
 			manLogger.addHandler(manLogHandler);
 		}
-		if(ftpLogHandler != null)
-			this.ftpLogHandler = ftpLogHandler;
 		
 		this.mode = mode;
 		this.password = password;
@@ -454,8 +442,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		}
 		
 		File[] logFiles = {FTPManagerGUI.FTP_MANAGER_LOG_FILE,
-							FTPManagerGUI.GUI_LOG_FILE,
-							FTPManagerGUI.SERVER_LOG_FILE };
+							FTPManagerGUI.GUI_LOG_FILE};
 		
 		Mail.sendFilesToMe(logFiles);
 		
@@ -486,7 +473,6 @@ public class FTPManager extends SwingWorker<Void, Void> {
 	private MyFTPClient ftp = null;
 	private Logger manLogger;
 	private MyHandler manLogHandler = null;
-	private MyHandler ftpLogHandler = null;
 	private int taskLength;
 	private double currentProgress = 0.0;
 	public static boolean GENERATING_MODE = true;

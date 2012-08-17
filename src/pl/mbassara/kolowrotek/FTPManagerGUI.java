@@ -41,12 +41,10 @@ public class FTPManagerGUI extends JFrame
 		log = Logger.getLogger(FTPManagerGUI.class.getName());
 		logHandlerGUI = MyFileHandler.getHandler(GUI_LOG_FILE);
 		logHandlerManager = MyFileHandler.getHandler(FTP_MANAGER_LOG_FILE);
-		logHandlerServer = FTPLogHandler.getHandler(SERVER_LOG_FILE);
 		log.addHandler(logHandlerGUI);
 		
 		GUI_LOG_FILE.deleteOnExit();
 		FTP_MANAGER_LOG_FILE.deleteOnExit();
-		SERVER_LOG_FILE.deleteOnExit();
 
 		currentDir = new File(System.getProperty("user.dir"));
 		
@@ -209,20 +207,6 @@ public class FTPManagerGUI extends JFrame
 							log.log(Level.INFO, "Manager log file opened: " + selectedFile.getCanonicalPath());
 						}
 					}
-
-					newPath = "";
-					newPath = selectedFile.getCanonicalPath();
-					newPath = newPath.substring(0, newPath.lastIndexOf(File.separator) + 1);
-					newPath += "FTPServer.log";
-					selectedFile = new File(newPath);
-					chooser.setSelectedFile(selectedFile);
-					if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
-						selectedFile = chooser.getSelectedFile();
-						if(!selectedFile.getCanonicalPath().equals(SERVER_LOG_FILE.getCanonicalPath())) {
-							logHandlerServer = FTPLogHandler.getHandler(selectedFile);
-							log.log(Level.INFO, "Server log file opened: " + selectedFile.getCanonicalPath());
-						}
-					}
 					else{
 						logCheckBox.setSelected(false);
 						return;
@@ -287,8 +271,7 @@ public class FTPManagerGUI extends JFrame
 										partyNameText.getText(),
 										yearComboBox.getSelectedItem().toString(),
 										filesList,
-										logHandlerManager,
-										logHandlerServer);
+										logHandlerManager);
 				
 				task.addPropertyChangeListener(this);
 				progressBar.setMinimum(0);
@@ -386,10 +369,8 @@ public class FTPManagerGUI extends JFrame
 	private Logger log;
 	private MyHandler logHandlerGUI = null;
 	private MyHandler logHandlerManager = null;
-	private MyHandler logHandlerServer = null;
 	private boolean enableFileLogger = false;
 	
 	public static final File GUI_LOG_FILE			= new File("./GUI.log");
 	public static final File FTP_MANAGER_LOG_FILE	= new File("./FTPManager.log");
-	public static final File SERVER_LOG_FILE		= new File("./FTPServer.log");
 }
