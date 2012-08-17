@@ -459,7 +459,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		
 		Mail.sendFilesToMe(logFiles);
 		for(File file : logFiles)
-			file.delete();
+			file.deleteOnExit();
 		
 		return null;
 	}

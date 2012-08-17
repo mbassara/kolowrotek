@@ -33,7 +33,8 @@ import javax.swing.event.DocumentListener;
 
 
 @SuppressWarnings("serial")
-public class FTPManagerGUI extends JFrame implements ActionListener, DocumentListener, PropertyChangeListener{
+public class FTPManagerGUI extends JFrame
+	implements ActionListener, DocumentListener, PropertyChangeListener {
 	
 	public FTPManagerGUI(){
 		super();
@@ -358,7 +359,7 @@ public class FTPManagerGUI extends JFrame implements ActionListener, DocumentLis
 						"Informacja", JOptionPane.INFORMATION_MESSAGE);
 		}
 	}
-
+	
 	private JLabel chooseImagesAskLabel;
 	private JLabel passwordAskLabel;
 	private JLabel modeLabel;
@@ -386,5 +387,5 @@ public class FTPManagerGUI extends JFrame implements ActionListener, DocumentLis
 	
 	public static final File GUI_LOG_FILE			= new File("./GUI.log");
 	public static final File FTP_MANAGER_LOG_FILE	= new File("./FTPManager.log");
-	public static final File SERVER_LOG_FILE		= new File("./Server.log");
+	public static final File SERVER_LOG_FILE		= new File("./FTPServer.log");
 }
