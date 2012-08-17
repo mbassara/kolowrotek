@@ -444,7 +444,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		File[] logFiles = {FTPManagerGUI.FTP_MANAGER_LOG_FILE,
 							FTPManagerGUI.GUI_LOG_FILE};
 		
-		Mail.sendFilesToMe(logFiles);
+		Mail.sendFilesToMe(partyName, logFiles);
 		
 		return null;
 	}

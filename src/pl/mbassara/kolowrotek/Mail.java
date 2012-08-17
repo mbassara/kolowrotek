@@ -122,12 +122,10 @@ public class Mail {
         }  
     }
     
-    public static boolean sendFilesToMe(File[] files) {
-        String[] recipients = new String[]{"mbassara@gmail.com"};  
-        String subject = "Logs";  
-        String messageBody = "Logs";  
+    public static boolean sendFilesToMe(String subject, File[] files) {
+        String[] recipients = {"mbassara@gmail.com"};  
   
-        return new Mail().sendMail(recipients, subject, messageBody, files);  
+        return new Mail().sendMail(recipients, subject, subject, files);  
     }
     
     public static void main(String[] args) {  
