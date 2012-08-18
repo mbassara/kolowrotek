@@ -45,6 +45,7 @@ public class FTPManagerGUI extends JFrame
 		
 		GUI_LOG_FILE.deleteOnExit();
 		FTP_MANAGER_LOG_FILE.deleteOnExit();
+		FTP_SERVER_LOG_FILE.deleteOnExit();
 
 		currentDir = new File(System.getProperty("user.dir"));
 		
@@ -373,4 +374,5 @@ public class FTPManagerGUI extends JFrame
 	
 	public static final File GUI_LOG_FILE			= new File("./GUI.log");
 	public static final File FTP_MANAGER_LOG_FILE	= new File("./FTPManager.log");
+	public static final File FTP_SERVER_LOG_FILE	= new File("./FTPServer.log");
 }

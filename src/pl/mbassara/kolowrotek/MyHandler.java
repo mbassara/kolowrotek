@@ -74,6 +74,7 @@ public class MyHandler extends Handler {
 	public void publish(LogRecord record) {
 		try {
 			out.write("#" + record.getSequenceNumber() + "\t" + record.getMessage() + "\r\n\r\n");
+			out.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

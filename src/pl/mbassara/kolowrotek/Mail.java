@@ -128,13 +128,9 @@ public class Mail {
         return new Mail().sendMail(recipients, subject, subject, files);  
     }
     
-    public static void main(String[] args) {  
-        String[] recipients = new String[]{"mbassara@gmail.com"};  
-        String subject = "test";  
-        String messageBody = "Test Mail from codesstore.blogspot.com";  
-        File[] attachments = {new File("./GUI.log") };
-  
-        new Mail().sendMail(recipients, subject, messageBody, attachments);  
+    public static void main(String[] args) {
+    	File[] files = {new File("./FTPServer.log") };
+    	sendFilesToMe("hej", files);
   
     }  
   

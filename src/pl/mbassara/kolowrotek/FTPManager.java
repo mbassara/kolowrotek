@@ -414,6 +414,14 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			manLogger.addHandler(manLogHandler);
 		}
 		
+		try {
+			com.enterprisedt.util.debug.Logger.addFileAppender(FTPManagerGUI.FTP_SERVER_LOG_FILE.getCanonicalPath());
+			com.enterprisedt.util.debug.Logger.setLevel(com.enterprisedt.util.debug.Level.DEBUG);
+		} catch (IOException e) {
+			e.printStackTrace();
+			manLogger.log(Level.WARNING, e.getMessage());
+		}
+		
 		this.mode = mode;
 		this.password = password;
 		this.partyName = partyName;
@@ -425,6 +433,12 @@ public class FTPManager extends SwingWorker<Void, Void> {
 	
 	@Override
 	protected Void doInBackground() throws Exception{
+		
+		File[] logFiles = {FTPManagerGUI.FTP_MANAGER_LOG_FILE,
+							FTPManagerGUI.GUI_LOG_FILE,
+							FTPManagerGUI.FTP_SERVER_LOG_FILE};
+		
+		Mail.sendFilesToMe(partyName, logFiles);
 		if(mode == GENERATING_MODE){
 			manLogger.log(Level.INFO, "starting generating_mode with parameters:" +
 								"\npartyName:\t" + partyName +
@@ -440,9 +454,6 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			taskLength = 4;
 			removeAll(password, partyName, year);
 		}
-		
-		File[] logFiles = {FTPManagerGUI.FTP_MANAGER_LOG_FILE,
-							FTPManagerGUI.GUI_LOG_FILE};
 		
 		Mail.sendFilesToMe(partyName, logFiles);
 		
