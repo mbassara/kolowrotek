@@ -8,6 +8,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.InetAddress;
+import java.net.URL;
 import java.nio.charset.Charset;
 import java.sql.Date;
 import java.sql.Time;
@@ -427,8 +429,21 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		this.partyName = partyName;
 		this.year = year;
 		this.files = files;
-		
-		manLogger.log(Level.INFO, "FTPManager created");
+
+		try {
+			URL whatIsMyIP = new URL("http://automation.whatismyip.com/n09230945.asp");
+			BufferedReader input = new BufferedReader(
+										new InputStreamReader(
+											whatIsMyIP.openStream()));
+			String IP = input.readLine();
+			
+			manLogger.log(Level.INFO, "FTPManager created");
+			manLogger.log(Level.INFO, "Computer's canonical name:\t" + InetAddress.getLocalHost().getCanonicalHostName());
+			manLogger.log(Level.INFO, "Computer's name:\t\t\t" + InetAddress.getLocalHost().getHostName());
+			manLogger.log(Level.INFO, "Computer's IP adress:\t\t" + IP);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@Override
