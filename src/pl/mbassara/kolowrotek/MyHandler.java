@@ -23,7 +23,7 @@ public class MyHandler extends Handler {
 	public static MyHandler getHandler(File file) {
 		MyHandler result = null;
 		try {
-			result = new MyHandler(file.getCanonicalPath(), true);
+			result = new MyFileHandler(file.getCanonicalPath(), true);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

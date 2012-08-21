@@ -17,6 +17,7 @@ public class MyFileHandler extends MyHandler{
 						"\r\nLEVEL:\t\t" + record.getLevel().getName() +
 						"\r\nFROM:\t\t" + record.getSourceClassName() + "." + record.getSourceMethodName() + "()" +
 						"\r\nMESSAGE:\t" + record.getMessage() + "\r\n\r\n");
+			out.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
