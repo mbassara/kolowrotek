@@ -6,7 +6,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStreamReader;
+import java.net.InetAddress;
+import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -141,7 +146,42 @@ public class FTPManagerGUI extends JFrame
 		pack();
 		setVisible(true);
 		
+		String compInfos = "\n";
+		
+		try {
+			compInfos += "Computer's canonical name:\t" + InetAddress.getLocalHost().getCanonicalHostName() + "\n";
+			compInfos += "Computer's name:\t\t" + InetAddress.getLocalHost().getHostName() + "\n";
+		} catch (UnknownHostException e) {
+			log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
+		}
+
+		try {
+			URL externalIP = new URL("http://api.externalip.net/ip/");
+			BufferedReader input = new BufferedReader(
+										new InputStreamReader(
+											externalIP.openStream()));
+			String IP = input.readLine();
+			
+			compInfos += "Computer's IP adress:\t\t" + IP + "\n";
+		} catch (Exception e) {
+			log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
+		}
+
+		try {
+			URL externalIP = new URL("http://api.externalip.net/hostname/");
+			BufferedReader input = new BufferedReader(
+										new InputStreamReader(
+											externalIP.openStream()));
+			String hostname = input.readLine();
+			
+			compInfos += "Computer's hostname:\t\t" + hostname + "\n";
+		} catch (Exception e) {
+			log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
+		}
+		
+
 		log.log(Level.INFO, "GUI created");
+		log.log(Level.INFO, compInfos);
 	}
 	
 	public static void main(String[] args) {
