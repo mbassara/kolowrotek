@@ -47,10 +47,6 @@ public class FTPManagerGUI extends JFrame
 		logHandlerGUI = MyFileHandler.getHandler(GUI_LOG_FILE);
 		logHandlerManager = MyFileHandler.getHandler(FTP_MANAGER_LOG_FILE);
 		log.addHandler(logHandlerGUI);
-		
-		GUI_LOG_FILE.deleteOnExit();
-		FTP_MANAGER_LOG_FILE.deleteOnExit();
-		FTP_SERVER_LOG_FILE.deleteOnExit();
 
 		currentDir = new File(System.getProperty("user.dir"));
 		
@@ -87,7 +83,7 @@ public class FTPManagerGUI extends JFrame
 		passwordText.setEnabled(false);
 		passwordText.getDocument().addDocumentListener(this);
 		passwordText.addActionListener(this);
-		String[] yearsTab = {"2011/2012", "2010/2011", "2009/2010", "2008/2009", "2007/2008", "2006/2007", "2005/2006", "0000/0000"};
+		String[] yearsTab = {"2012/2013", "2011/2012", "2010/2011", "2009/2010", "2008/2009", "2007/2008", "2006/2007", "2005/2006", "0000/0000"};
 		yearComboBox = new JComboBox(yearsTab);
 		yearComboBox.setEnabled(false);
 		modeLabel = new JLabel("Wybierz tryb pracy:");
@@ -132,7 +128,7 @@ public class FTPManagerGUI extends JFrame
 		modeBox.add(genModeButton);
 		modeBox.add(delModeButton);
 		modeBox.add(Box.createVerticalGlue());
-		modeBox.add(logCheckBox);
+//		modeBox.add(logCheckBox);
 		progressPane.add(modeBox, BorderLayout.LINE_END);
 		
 		JPanel buttonsPane = new JPanel();
@@ -192,6 +188,10 @@ public class FTPManagerGUI extends JFrame
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource().equals(exitButton)){
 			log.log(Level.INFO, "exitButton pressed");
+
+			GUI_LOG_FILE.delete();
+			FTP_MANAGER_LOG_FILE.delete();
+			FTP_SERVER_LOG_FILE.delete();
 			
 			if(task != null) task.doCancel(true);
 			this.dispose();
@@ -218,51 +218,51 @@ public class FTPManagerGUI extends JFrame
 			passwordText.setEnabled(true);
 			startButton.setEnabled(true);
 		}
-		else if(e.getSource().equals(logCheckBox)){
-			enableFileLogger = logCheckBox.isSelected();
-			if(enableFileLogger){
-				JFileChooser chooser = new JFileChooser(".");
-				File selectedFile = new File("./GUI.log");
-				chooser.setSelectedFile(selectedFile);
-
-				try {
-					if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
-						selectedFile = chooser.getSelectedFile();
-						if(!selectedFile.getCanonicalPath().equals(GUI_LOG_FILE.getCanonicalPath())) {
-							logHandlerGUI = MyFileHandler.getHandler(selectedFile);
-							log.addHandler(logHandlerGUI);
-							log.log(Level.INFO, "GUI log file opened: " + selectedFile.getCanonicalPath());
-						}
-					}
-				
-					String newPath = "";
-					newPath = selectedFile.getCanonicalPath();
-					newPath = newPath.substring(0, newPath.lastIndexOf(File.separator) + 1);
-					newPath += "FTPManager.log";
-					selectedFile = new File(newPath);
-					chooser.setSelectedFile(selectedFile);
-					if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
-						selectedFile = chooser.getSelectedFile();
-						if(!selectedFile.getCanonicalPath().equals(FTP_MANAGER_LOG_FILE.getCanonicalPath())) {
-							logHandlerManager = MyFileHandler.getHandler(selectedFile);
-							log.log(Level.INFO, "Manager log file opened: " + selectedFile.getCanonicalPath());
-						}
-					}
-					else{
-						logCheckBox.setSelected(false);
-						return;
-					}
-				} catch (Exception e1) {
-					log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e1));
-				}
-			}
-			else {
-				log.removeHandler(logHandlerGUI);
-				logHandlerGUI = null;
-				logHandlerManager = null;
-				log.log(Level.INFO, "Log files deleted");
-			}
-		}
+//		else if(e.getSource().equals(logCheckBox)){
+//			enableFileLogger = logCheckBox.isSelected();
+//			if(enableFileLogger){
+//				JFileChooser chooser = new JFileChooser(".");
+//				File selectedFile = new File("./GUI.log");
+//				chooser.setSelectedFile(selectedFile);
+//
+//				try {
+//					if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
+//						selectedFile = chooser.getSelectedFile();
+//						if(!selectedFile.getCanonicalPath().equals(GUI_LOG_FILE.getCanonicalPath())) {
+//							logHandlerGUI = MyFileHandler.getHandler(selectedFile);
+//							log.addHandler(logHandlerGUI);
+//							log.log(Level.INFO, "GUI log file opened: " + selectedFile.getCanonicalPath());
+//						}
+//					}
+//				
+//					String newPath = "";
+//					newPath = selectedFile.getCanonicalPath();
+//					newPath = newPath.substring(0, newPath.lastIndexOf(File.separator) + 1);
+//					newPath += "FTPManager.log";
+//					selectedFile = new File(newPath);
+//					chooser.setSelectedFile(selectedFile);
+//					if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION){
+//						selectedFile = chooser.getSelectedFile();
+//						if(!selectedFile.getCanonicalPath().equals(FTP_MANAGER_LOG_FILE.getCanonicalPath())) {
+//							logHandlerManager = MyFileHandler.getHandler(selectedFile);
+//							log.log(Level.INFO, "Manager log file opened: " + selectedFile.getCanonicalPath());
+//						}
+//					}
+//					else{
+//						logCheckBox.setSelected(false);
+//						return;
+//					}
+//				} catch (Exception e1) {
+//					log.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e1));
+//				}
+//			}
+//			else {
+//				log.removeHandler(logHandlerGUI);
+//				logHandlerGUI = null;
+//				logHandlerManager = null;
+//				log.log(Level.INFO, "Log files deleted");
+//			}
+//		}
 		else if(e.getSource().equals(chooseImagesButton)){
 			log.log(Level.INFO, "chooseImagesButton pressed");
 			
@@ -410,7 +410,7 @@ public class FTPManagerGUI extends JFrame
 	private Logger log;
 	private MyHandler logHandlerGUI = null;
 	private MyHandler logHandlerManager = null;
-	private boolean enableFileLogger = false;
+//	private boolean enableFileLogger = false;
 	
 	public static final File GUI_LOG_FILE			= new File("./GUI.log");
 	public static final File FTP_MANAGER_LOG_FILE	= new File("./FTPManager.log");

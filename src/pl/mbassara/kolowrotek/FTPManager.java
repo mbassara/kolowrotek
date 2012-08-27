@@ -143,8 +143,8 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			while((tmp = in.readLine()) != null)
 				indexContent += tmp + "\n";
 			in.close();
-			
-			int position = indexContent.indexOf("</a></li>\n\t\t\t</ul>") + 9;		// index of \n (newline) sign
+
+			int position = indexContent.indexOf("\n\t\t\t</ul>");		// index of \n (newline) sign
 			tmp = indexContent.substring(0, position);
 			tmp += "\n\t\t\t\t<li><a href=\"" + partyDirName + "/\">";
 			tmp += partyName + "</a></li>";
