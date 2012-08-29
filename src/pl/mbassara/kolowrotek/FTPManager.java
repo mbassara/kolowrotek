@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.StringReader;
 import java.nio.charset.Charset;
 import java.sql.Date;
 import java.sql.Time;
@@ -15,6 +16,7 @@ import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.swing.JOptionPane;
 import javax.swing.SwingWorker;
 
 import com.enterprisedt.net.ftp.FTPClient;
@@ -132,7 +134,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		File file = new File("tmp");
 		ftp.get(file.getCanonicalPath(), yearDirName + "/index.php");
 		
-		String tmp, indexContent = "";
+		String tmp, siteContent = "";
 		
 		try {
 			BufferedReader in = new BufferedReader(
@@ -140,21 +142,47 @@ public class FTPManager extends SwingWorker<Void, Void> {
 										new FileInputStream("tmp"),
 										Charset.forName("UTF-8")));
 			
-			while((tmp = in.readLine()) != null)
-				indexContent += tmp + "\n";
+			boolean listProcessed = false;
+			int listLength = 0;
+			while((tmp = in.readLine()) != null) {
+				if(!listProcessed && tmp.contains("<li>"))
+					listLength++;
+				if(!listProcessed && tmp.contains("</ul>"))
+					listProcessed = true;
+				siteContent += tmp + "\n";
+			}
 			in.close();
-
-			int position = indexContent.indexOf("\n\t\t\t</ul>");		// index of \n (newline) sign
-			tmp = indexContent.substring(0, position);
-			tmp += "\n\t\t\t\t<li><a href=\"" + partyDirName + "/\">";
-			tmp += partyName + "</a></li>";
-			tmp += indexContent.substring(position);	// in tmp we have updated index.html
-
+			
+			// INPUT DIALOG
+			int newPartyPosition = showPartyPositionDialog(listLength);
+			
+			// INSERTING PARTY
+			String finalSiteContent = "";
+			BufferedReader siteContentReader = new BufferedReader(
+													new StringReader(siteContent));
+			
+			boolean listSectionReached = false;
+			while((tmp = siteContentReader.readLine()) != null) {
+				
+				if(listSectionReached && newPartyPosition == 0)
+					finalSiteContent += "\t\t\t\t<li><a href=\"" + partyDirName
+										+ "/\">" + partyName + "</a></li>\n";
+				if(listSectionReached)
+					newPartyPosition--;
+				
+				if(tmp.contains("<ul>")) 
+					listSectionReached = true;
+				
+				finalSiteContent += tmp + "\n";
+			}
+			siteContentReader.close();
+				
+			// WRITTING UPDATED SITE CONTENT TO PHP FILE
 			BufferedWriter out = new BufferedWriter(
 									new OutputStreamWriter(
 										new FileOutputStream("tmp"),
 										Charset.forName("UTF-8")));
-			out.write(tmp);
+			out.write(finalSiteContent);
 			out.flush();
 			out.close();
 			
@@ -403,6 +431,34 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		}
 		
 		return result + hash;
+	}
+	
+	private int showPartyPositionDialog(int listLength) {
+		String[] possiblePositions = new String[listLength + 1];
+		possiblePositions[0] = "na początku";
+		for(int i = 1; i < listLength; i++)
+			possiblePositions[i] = "między " + i + ". i " + (i+1) + ".";
+		possiblePositions[listLength] = "na końcu";
+		
+		Object selectedValue = JOptionPane.showInputDialog(FTPManagerGUI.getInstance(),
+								"Wybierz w jakim miejscu ma zostać\ndodana nowa impreza:",
+								"Pozycja nowej imprezy",
+								JOptionPane.QUESTION_MESSAGE, null,
+								possiblePositions, possiblePositions[possiblePositions.length - 1]);
+
+		manLogger.log(Level.INFO, "STRING position of new party: " + selectedValue);
+		
+		int selectedIndex = -1;
+		for(int i = 0; i < possiblePositions.length && selectedIndex == -1; i++)
+			if(possiblePositions[i].equals(selectedValue))
+				selectedIndex = i;
+		
+		if(selectedIndex == -1)
+			selectedIndex = possiblePositions.length - 1;	// default position is on the end of the list
+		
+		manLogger.log(Level.INFO, "INT position of new party: " + selectedIndex);
+		
+		return selectedIndex;
 	}
 	
 	// WORKER METHODS

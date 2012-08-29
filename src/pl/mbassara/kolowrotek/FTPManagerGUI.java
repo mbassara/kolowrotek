@@ -41,8 +41,15 @@ import javax.swing.event.DocumentListener;
 public class FTPManagerGUI extends JFrame
 	implements ActionListener, DocumentListener, PropertyChangeListener {
 	
+	private static FTPManagerGUI instance = null;
+	
+	public static FTPManagerGUI getInstance() {
+		return instance;
+	}
+	
 	public FTPManagerGUI(){
 		super();
+		instance = this;
 		log = Logger.getLogger(FTPManagerGUI.class.getName());
 		logHandlerGUI = MyFileHandler.getHandler(GUI_LOG_FILE);
 		logHandlerManager = MyFileHandler.getHandler(FTP_MANAGER_LOG_FILE);
