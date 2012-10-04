@@ -205,7 +205,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			
 			boolean removedFlag = false;
 			while((tmp = in.readLine()) != null){
-				if(!tmp.contains(partyName)){
+				if(!tmp.substring(tmp.indexOf(',')+1).equals(partyName)){
 					out.write(tmp + "\n");
 				}
 				else{

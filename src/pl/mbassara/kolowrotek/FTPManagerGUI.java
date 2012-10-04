@@ -395,7 +395,7 @@ public class FTPManagerGUI extends JFrame
 	}
 	
 	public static String getCurrentVersionFromServer(){
-		String result = version;
+		String result = "error";
 		
 		try {
 			URL remoteFile = new URL("http://www.gim2brzeszcze.o12.pl/kolowrotek/galeria/app/version");
@@ -417,8 +417,15 @@ public class FTPManagerGUI extends JFrame
 	}
 	
 	public static void main(String[] args) {
-		if(version.equals(getCurrentVersionFromServer()))
+		if(getCurrentVersionFromServer().equals(version))
 			new FTPManagerGUI();
+		else if(getCurrentVersionFromServer().equals("error")){
+			JOptionPane.showConfirmDialog(null,
+					"Wystąpił błąd. Proszę sprawdzić czy komputer\njest połączony z internetem",
+					"Błąd",
+					JOptionPane.DEFAULT_OPTION,
+					JOptionPane.ERROR_MESSAGE);
+		}
 		else{
 			JOptionPane.showConfirmDialog(null,
 											"Jest dostępna nowa wersja programu. Proszę pobrać\nnową wersję ze strony galerii.",
