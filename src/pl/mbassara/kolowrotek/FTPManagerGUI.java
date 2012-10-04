@@ -8,8 +8,10 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
@@ -42,6 +44,7 @@ public class FTPManagerGUI extends JFrame
 	implements ActionListener, DocumentListener, PropertyChangeListener {
 	
 	private static FTPManagerGUI instance = null;
+	public static String version = "1.01";
 	
 	public static FTPManagerGUI getInstance() {
 		return instance;
@@ -58,7 +61,7 @@ public class FTPManagerGUI extends JFrame
 		currentDir = new File(System.getProperty("user.dir"));
 		
 		partyTextChanged = false;
-		setTitle("Kołowrotek Manager v0.6");
+		setTitle("Kołowrotek Manager v" + version);
 		setLayout(new BorderLayout());
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setPreferredSize(new Dimension(700, 400));
@@ -185,10 +188,6 @@ public class FTPManagerGUI extends JFrame
 
 		log.log(Level.INFO, "GUI created");
 		log.log(Level.INFO, compInfos);
-	}
-	
-	public static void main(String[] args) {
-		new FTPManagerGUI();
 	}
 	
 	@Override
@@ -392,6 +391,40 @@ public class FTPManagerGUI extends JFrame
 				JOptionPane.showMessageDialog(this,
 						(genModeButton.isSelected() ? "Dodawanie" : "Usuwanie") + " zdjęć zakończyło się sukcesem!",
 						"Informacja", JOptionPane.INFORMATION_MESSAGE);
+		}
+	}
+	
+	public static String getCurrentVersionFromServer(){
+		String result = version;
+		
+		try {
+			URL remoteFile = new URL("http://www.gim2brzeszcze.o12.pl/kolowrotek/galeria/app/version");
+			InputStreamReader reader = new InputStreamReader(remoteFile.openStream());
+			String tmp = "";
+			int current;
+			while ((current = reader.read()) != -1) {
+				tmp += new Character((char) current);
+			}
+			
+			result = tmp;
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		if(version.equals(getCurrentVersionFromServer()))
+			new FTPManagerGUI();
+		else{
+			JOptionPane.showConfirmDialog(null,
+											"Jest dostępna nowa wersja programu. Proszę pobrać\nnową wersję ze strony galerii.",
+											"Nowa wersja",
+											JOptionPane.DEFAULT_OPTION,
+											JOptionPane.INFORMATION_MESSAGE);
 		}
 	}
 	

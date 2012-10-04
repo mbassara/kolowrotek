@@ -27,10 +27,11 @@ public class FTPManager extends SwingWorker<Void, Void> {
 	
 	private void generateXML(FTPClient ftp, String dirPath, int numberOfImages) throws FTPException {
 		String content = XMLbeginning;
+		
 		for (int i = 1; i <= numberOfImages; i++){
-			content += "\n  <image imageURL=\"images/" + i;
-			content += ".jpg\"\n\tthumbURL=\"thumbs/" + i;
-			content += ".jpg\"\n\tlinkURL=\"images/" + i;
+			content += "\n  <image imageURL=\"" + dirPath.substring(1) + "/images/" + i;
+			content += ".jpg\"\n\tthumbURL=\"" + dirPath.substring(1) + "/thumbs/" + i;
+			content += ".jpg\"\n\tlinkURL=\"" + dirPath.substring(1) + "/images/" + i;
 			content += ".jpg\"\n\tlinkTarget=\"_blank\">\n    <caption><![CDATA[]]></caption>\n  </image>";
 		}
 		content += "\n</simpleviewergallery>\n";
@@ -51,24 +52,18 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		}
 	}
 	
-	private void generatePHP(FTPClient ftp, String dirPath, String partyName, String year) throws FTPException {
-		
-		String content = PHPbeginning;
-		content += partyName;
-		content += PHPmiddle;
-		content += year + "</a> &#8250; <a href=\"\">" + partyName;
-		content += PHPending;
+	private void generatePartyNameFile(FTPClient ftp, String dirPath, String partyName) throws FTPException {
 		
 		try {
 			BufferedWriter out = new BufferedWriter(
 									new OutputStreamWriter(
 										new FileOutputStream("tmp"),
 										Charset.forName("UTF-8")));
-			out.write(content);
+			out.write(partyName);
 			out.flush();
 			out.close();
 			
-			ftp.put("tmp", dirPath + "/index.php");
+			ftp.put("tmp", dirPath + "/party_name");
 			
 		} catch (IOException e) {
 			manLogger.log(Level.WARNING, ExceptionsUtilities.printStackTraceToString(e));
@@ -132,9 +127,9 @@ public class FTPManager extends SwingWorker<Void, Void> {
 		final String yearDirName = dirName.substring(0, 10);
 		
 		File file = new File("tmp");
-		ftp.get(file.getCanonicalPath(), yearDirName + "/index.php");
+		ftp.get(file.getCanonicalPath(), yearDirName + "/index.csv");
 		
-		String tmp, siteContent = "";
+		String tmp, indexContent = "";
 		
 		try {
 			BufferedReader in = new BufferedReader(
@@ -142,14 +137,10 @@ public class FTPManager extends SwingWorker<Void, Void> {
 										new FileInputStream("tmp"),
 										Charset.forName("UTF-8")));
 			
-			boolean listProcessed = false;
 			int listLength = 0;
-			while((tmp = in.readLine()) != null) {
-				if(!listProcessed && tmp.contains("<li>"))
-					listLength++;
-				if(!listProcessed && tmp.contains("</ul>"))
-					listProcessed = true;
-				siteContent += tmp + "\n";
+			while((tmp = in.readLine()) != null && tmp.length() > 2) {
+				listLength++;
+				indexContent += tmp + "\n";
 			}
 			in.close();
 			
@@ -157,23 +148,20 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			int newPartyPosition = showPartyPositionDialog(listLength);
 			
 			// INSERTING PARTY
-			String finalSiteContent = "";
+			String finalIndexContent = "";
 			BufferedReader siteContentReader = new BufferedReader(
-													new StringReader(siteContent));
+													new StringReader(indexContent));
 			
-			boolean listSectionReached = false;
 			while((tmp = siteContentReader.readLine()) != null) {
 				
-				if(listSectionReached && newPartyPosition == 0)
-					finalSiteContent += "\t\t\t\t<li><a href=\"" + partyDirName
-										+ "/\">" + partyName + "</a></li>\n";
-				if(listSectionReached)
-					newPartyPosition--;
+				if(newPartyPosition == 0)
+					finalIndexContent += partyDirName + "," + partyName + "\n";
 				
-				if(tmp.contains("<ul>")) 
-					listSectionReached = true;
+				newPartyPosition--;
+				finalIndexContent += tmp + "\n";
 				
-				finalSiteContent += tmp + "\n";
+				if(newPartyPosition == 0)
+					finalIndexContent += partyDirName + "," + partyName + "\n";
 			}
 			siteContentReader.close();
 				
@@ -182,11 +170,11 @@ public class FTPManager extends SwingWorker<Void, Void> {
 									new OutputStreamWriter(
 										new FileOutputStream("tmp"),
 										Charset.forName("UTF-8")));
-			out.write(finalSiteContent);
+			out.write(finalIndexContent);
 			out.flush();
 			out.close();
 			
-			ftp.put(file.getCanonicalPath(), yearDirName + "/index.php");
+			ftp.put(file.getCanonicalPath(), yearDirName + "/index.csv");
 			file.delete();
 			
 		} catch (FileNotFoundException e) {
@@ -199,7 +187,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 	private String removePartyFromYearIndexFile(FTPClient ftp, String yearDirName, String partyName) throws FTPException, IOException {
 		
 		File file = new File("tmp");
-		ftp.get(file.getCanonicalPath(), yearDirName + "/index.php");
+		ftp.get(file.getCanonicalPath(), yearDirName + "/index.csv");
 		
 		
 		String tmp, resultString = null;
@@ -217,12 +205,12 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			
 			boolean removedFlag = false;
 			while((tmp = in.readLine()) != null){
-				if(!tmp.contains("/\">" + partyName + "</a></li>")){
+				if(!tmp.contains(partyName)){
 					out.write(tmp + "\n");
 				}
 				else{
 					removedFlag = true;
-					resultString = yearDirName + "/" + tmp.substring(tmp.indexOf("\"") + 1, tmp.indexOf("/"));
+					resultString = yearDirName + "/" + tmp.substring(0, tmp.indexOf(","));
 				}
 			}
 			
@@ -234,7 +222,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 				firePropertyChange("error", null, "partyNotFound");
 			
 			file = new File("tmp2");
-			ftp.put(file.getCanonicalPath(), yearDirName + "/index.php");
+			ftp.put(file.getCanonicalPath(), yearDirName + "/index.csv");
 			return resultString;
 			
 		} catch (FileNotFoundException e) {
@@ -265,6 +253,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			setProgress((int) (currentProgress += 100.0 / taskLength));
 			firePropertyChange("progress info", null, "Połączono.");
 
+
 			ftp.setType(FTPTransferType.BINARY);
 			int processedImages = generateImages(ftp, dirName, year, files);
 			setProgress((int) (currentProgress += 100.0 / taskLength));
@@ -274,13 +263,13 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			setProgress((int) (currentProgress += 100.0 / taskLength));
 			firePropertyChange("progress info", null, "Plik\t" + dirName + "/gallery.xml wygenerowany.");
 			
-			generatePHP(ftp, dirName, partyName, year);
+			generatePartyNameFile(ftp, dirName, partyName);
 			setProgress((int) (currentProgress += 100.0 / taskLength));
-			firePropertyChange("progress info", null, "Plik\t" + dirName + "/index.php wygenerowany.");
+			firePropertyChange("progress info", null, "Plik\t" + dirName + "/party_name wygenerowany.");
 			
 			addPartyToYearIndexFile(ftp, dirName, partyName);
 			setProgress((int) (currentProgress += 100.0 / taskLength));
-			firePropertyChange("progress info", null, "Plik\t" + "/" + dirName.substring(1, 10) + "/index.php uaktualniony.");
+			firePropertyChange("progress info", null, "Plik\t" + "/" + dirName.substring(1, 10) + "/index.csv uaktualniony.");
 			
 			Time time = new Time(System.currentTimeMillis());
 			Date date = new Date(System.currentTimeMillis());
@@ -335,7 +324,7 @@ public class FTPManager extends SwingWorker<Void, Void> {
 			ftp.setType(FTPTransferType.BINARY);
 			dirName = removePartyFromYearIndexFile(ftp, dirName, partyName);
 			setProgress((int) (currentProgress += 100.0 / taskLength));
-			firePropertyChange("progress info", null, "Plik\t\t" + "/" + dirName.substring(1, 10) + "/index.php uaktualniony.");
+			firePropertyChange("progress info", null, "Plik\t\t" + "/" + dirName.substring(1, 10) + "/index.csv uaktualniony.");
 			
 			firePropertyChange("progress info", null, "Usuwanie folderu\t" + dirName + " z zawartością.");
 			
@@ -546,7 +535,4 @@ public class FTPManager extends SwingWorker<Void, Void> {
 	public static boolean REMOVING_MODE = false;
 	
 	private static final String XMLbeginning = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<simpleviewergallery \n\n\tmaxImageWidth=\"1600\"\n\tmaxImageHeight=\"1200\"\n\timageQuality=\"80\"\n\tthumbWidth=\"75\"\n\tthumbHeight=\"75\"\n\tthumbQuality=\"90\"\n\tuseFlickr=\"false\"\n\tresizeOnImport=\"true\"\n\tcropToFit=\"false\"\n\tbackgroundTransparent=\"true\"\n\tuseColorCorrection=\"true\"\n\tgalleryStyle=\"COMPACT\"\n\tthumbPosition=\"BOTTOM\"\n\tthumbColumns=\"6\"\n\tthumbRows=\"1\"\n\tframeWidth=\"4\"\n\tenableLooping=\"false\"\n\tstageVAlign=\"CENTER\"\n\timageFrameStyle=\"ROUNDED\"\n\timageCornerRadius=\"20\"\n\timageDropShadow=\"true\"\n\timageTransitionType=\"FADE\"\n\timageHAlign=\"CENTER\"\n\timageVAlign=\"CENTER\"\n\tshowOverlay=\"HOVER\"\n\timageNavStyle=\"BIG\"\n\tthumbFrameStyle=\"ROUNDED\"\n\tshowDownloadButton=\"true\"\n\tshowOpenButton=\"false\"\n\tshowNavButtons=\"false\"\n\tshowAutoPlayButton=\"false\"\n\tbuttonBarPosition=\"OVERLAY\"\n\tshowBackButton=\"false\"\n\tbackButtonText=\"&amp;amp;amp;amp;lt; Back\"\n\tuseFixedLayout=\"false\"\n\tmobileShowNav=\"true\"\n\tgalleryWidth=\"100%\"\n\timageScaleMode=\"SCALE\"\n\n>";
-	private static final String PHPbeginning = "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n\n<head>\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\n<meta name=\"description\" content=\"description\"/>\n<meta name=\"keywords\" content=\"keywords\"/> \n<meta name=\"author\" content=\"author\"/> \n<link rel=\"stylesheet\" type=\"text/css\" href=\"../../default.css\" media=\"screen\"/>\n<title>";
-	private static final String PHPmiddle = "</title>\n\t<script type=\"text/javascript\">\n\n\t\tvar _gaq = _gaq || [];\n\t\t_gaq.push(['_setAccount', 'UA-34584156-2']);\n\t\t_gaq.push(['_trackPageview']);\n\n\t\t(function() {\n\t\t\tvar ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n\t\t\tga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n\t\t\tvar s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n\t\t})();\n\n\t</script>\n</head>\n\n<body>\n\n<div 'class=\"outer-container\">\n\n<div class=\"inner-container\">\n\n\t<div class=\"header\">\n\t\t<a href=\"../../\"></a>\n\t</div>\n\n\t<div class=\"path\">\n\t\t\t\n\t\t\t<a href=\"../../\">Strona Główna</a> &#8250; <a href=\"../\">";
-	private static final String PHPending = "</a>\n\n\t</div>\n\n\t<div class=\"main-gallery\">\t\t\n\t\t\n\t\t<div class=\"content\">\n\n\t\t\t<!--START SIMPLEVIEWER EMBED -->\n\t\t\t<script type=\"text/javascript\" src=\"../../svcore/js/simpleviewer.js\"></script>\n\t\t\t<script type=\"text/javascript\">\n\t\t\tsimpleviewer.ready(function () {\n\t\t\t\tsimpleviewer.load('sv-container', '100%', '100%', 'transparent', true);\n\t\t\t});\n\t\t\t</script>\n\t\t\t<div id=\"sv-container\"></div>\n\t\t\t<!--END SIMPLEVIEWER EMBED -->\n\n\n\t\t</div>\n\n\t\t<div class=\"navigation\">\n\n\t\t\t<h2>MENU</h2>\n\t\t\t<ul>\n<?php\n\t$file = fopen(\"../../years\", \"r\");\n\twhile (false !== ($line = fgets($file))) {\n\t\techo \"\\t\\t\\t\\t<li><a href=\\\"../../\".$line.\"\\\">\";\n\t\t$tmp = explode(\"-\", $line);\n\t\techo implode(\"/\", $tmp).\"</a></li>\";\n\t}\n?>\n\t\t\t</ul>\n\t\t\t<h2>Licznik odwiedzin</h2>\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"http://www.free-counter.com/\"><img src=\"http://www.free-counter.com/counter.php?b=32562\" border=\"0\" alt=\"Free Counter\"></a></li>\n\t\t\t</ul>\n\n\t\t</div>\n\n\t\t<div class=\"clearer\">&nbsp;</div>\n\n\t</div>\n\n</div>\n\n<div class=\"author\">\n\n\t<?php $file = fopen(\"../../author\", \"r\");\n\t\tif (false !== ($line = fgets($file))) {\n\t\t\techo $line;\n\t\t}\n\t?>\n\t\n</div>\n\n</div>\n\n</body>\n\n</html>\n";
 }

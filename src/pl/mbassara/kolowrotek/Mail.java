@@ -122,10 +122,16 @@ public class Mail {
         }  
     }
     
-    public static boolean sendFilesToMe(String subject, File[] files) {
-        String[] recipients = {"mbassara@gmail.com"};  
+    public static void sendFilesToMe(final String subject, final File[] files) {
+        final String[] recipients = {"mbassara@gmail.com"};  
   
-        return new Mail().sendMail(recipients, subject, subject, files);  
+        Thread thread = new Thread(new Runnable() {
+			@Override
+			public void run() {
+		        new Mail().sendMail(recipients, subject, subject, files);	
+			}
+		});
+        thread.start();
     }
     
     public static void main(String[] args) {
