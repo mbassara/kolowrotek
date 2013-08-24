@@ -1,0 +1,1026 @@
+DEBUG [FTPClient] 24 sie 2013 19:57:30.984 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 19:57:31.140 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.270 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.271 : 220-You are user number 2 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.271 : 220-Local time is now 19:57. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.271 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.272 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.272 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.274 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.336 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.336 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.460 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.461 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.526 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.526 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 19:57:31.585 : 550 Can't create directory: No such file or directory
+INFO [FTPControlSocket] 24 sie 2013 19:57:31.586 : Expected reply codes = [200,250,257]
+WARN [FTPClient] 24 sie 2013 19:57:31.587 : cancelTransfer() called
+DEBUG [FTPClient] 24 sie 2013 20:10:11.738 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 20:10:11.742 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.877 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.877 : 220-You are user number 4 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.877 : 220-Local time is now 20:10. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.878 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.878 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.878 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.879 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.940 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:11.941 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.015 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.016 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.075 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.075 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.135 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.135 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.198 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.199 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.271 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.689 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.748 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:10:12.749 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.749 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.809 : 227 Entering Passive Mode (178,33,49,68,202,53)
+INFO [FTPControlSocket] 24 sie 2013 20:10:12.810 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.874 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:12.934 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:10:15.056 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:15.510 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:15.510 : 226 2.566 seconds (measured here), 123.02 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:15.580 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:15.639 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:10:15.639 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:15.640 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:15.699 : 227 Entering Passive Mode (178,33,49,68,84,89)
+INFO [FTPControlSocket] 24 sie 2013 20:10:15.700 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:18.756 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:18.817 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:10:18.818 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:18.919 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:18.919 : 226 0.091 seconds (measured here), 39.69 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:18.921 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:18.981 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:10:18.981 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:18.982 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.043 : 227 Entering Passive Mode (178,33,49,68,118,224)
+INFO [FTPControlSocket] 24 sie 2013 20:10:19.043 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.103 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.164 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:10:19.165 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.241 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.241 : 226 0.069 seconds (measured here), 16.71 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.243 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.301 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:10:19.301 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.362 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.423 : 227 Entering Passive Mode (178,33,49,68,84,172)
+INFO [FTPControlSocket] 24 sie 2013 20:10:19.423 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.482 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.542 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:10:19.543 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.610 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.610 : 226 0.060 seconds (measured here), 67.09 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.611 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.672 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:10:19.672 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.672 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.733 : 227 Entering Passive Mode (178,33,49,68,110,31)
+INFO [FTPControlSocket] 24 sie 2013 20:10:19.734 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.794 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.854 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:10:19.861 : Transferred 1 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.861 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:19.861 : 226 0.000 seconds (measured here), 15.75 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:31.760 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:31.819 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:10:31.819 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:31.819 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:31.877 : 227 Entering Passive Mode (178,33,49,68,73,4)
+INFO [FTPControlSocket] 24 sie 2013 20:10:31.878 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:31.940 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.000 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:10:32.001 : Transferred 0 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.061 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.064 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.122 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:10:32.123 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.123 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.187 : 227 Entering Passive Mode (178,33,49,68,21,252)
+INFO [FTPControlSocket] 24 sie 2013 20:10:32.187 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.246 : ---> STOR /logs/2013-08-24_20:10:32_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.333 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:10:32.335 : Transferred 4342 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.433 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.433 : 226 0.093 seconds (measured here), 45.37 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.433 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.491 : 221-Goodbye. You uploaded 325 and downloaded 1 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 20:10:32.491 : 221 Logout.
+DEBUG [FTPClient] 24 sie 2013 20:16:06.382 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 20:16:06.384 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.520 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.521 : 220-You are user number 4 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.521 : 220-Local time is now 20:16. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.521 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.521 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.522 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.523 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.591 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.591 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.666 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.667 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.732 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.732 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.795 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.795 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.857 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.857 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:06.915 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:07.276 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:07.337 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:16:07.338 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:07.338 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:07.397 : 227 Entering Passive Mode (178,33,49,68,216,48)
+INFO [FTPControlSocket] 24 sie 2013 20:16:07.398 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:07.461 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:07.522 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:16:09.640 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.099 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.099 : 226 2.568 seconds (measured here), 122.92 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.175 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.234 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:16:10.234 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.235 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.293 : 227 Entering Passive Mode (178,33,49,68,161,165)
+INFO [FTPControlSocket] 24 sie 2013 20:16:10.293 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.353 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.415 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:16:10.416 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.511 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.511 : 226 0.091 seconds (measured here), 39.60 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.513 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.573 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:16:10.573 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.573 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.632 : 227 Entering Passive Mode (178,33,49,68,7,36)
+INFO [FTPControlSocket] 24 sie 2013 20:16:10.633 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.692 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.758 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:16:10.759 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.831 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.831 : 226 0.074 seconds (measured here), 15.58 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.833 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.890 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:16:10.891 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.891 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:10.950 : 227 Entering Passive Mode (178,33,49,68,25,202)
+INFO [FTPControlSocket] 24 sie 2013 20:16:10.950 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.010 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.074 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:16:11.076 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.140 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.140 : 226 0.060 seconds (measured here), 66.97 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.142 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.202 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:16:11.203 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.203 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.262 : 227 Entering Passive Mode (178,33,49,68,176,178)
+INFO [FTPControlSocket] 24 sie 2013 20:16:11.262 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.323 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.382 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:16:11.393 : Transferred 122 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.394 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:11.394 : 226 0.000 seconds (measured here), 2.33 Mbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.035 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.094 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:16:19.095 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.095 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.153 : 227 Entering Passive Mode (178,33,49,68,159,37)
+INFO [FTPControlSocket] 24 sie 2013 20:16:19.154 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.214 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.276 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:16:19.277 : Transferred 146 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.341 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.341 : 226 0.061 seconds (measured here), 2.34 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.344 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.404 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:16:19.404 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.404 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.463 : 227 Entering Passive Mode (178,33,49,68,169,100)
+INFO [FTPControlSocket] 24 sie 2013 20:16:19.464 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.522 : ---> STOR /logs/2013-08-24_20:16:19_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.638 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:16:19.640 : Transferred 6999 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.780 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.781 : 226 0.140 seconds (measured here), 48.90 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.781 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.852 : 221-Goodbye. You uploaded 328 and downloaded 1 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 20:16:19.852 : 221 Logout.
+DEBUG [FTPClient] 24 sie 2013 20:35:51.954 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 20:35:51.956 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.106 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.106 : 220-You are user number 1 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.106 : 220-Local time is now 20:35. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.107 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.107 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.107 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.109 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.179 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.179 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.255 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.256 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.316 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.316 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 20:35:52.377 : 550 Can't create directory: File exists
+INFO [FTPControlSocket] 24 sie 2013 20:35:52.377 : Expected reply codes = [200,250,257]
+WARN [FTPClient] 24 sie 2013 20:35:52.380 : cancelTransfer() called
+DEBUG [FTPClient] 24 sie 2013 20:36:53.116 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 20:36:53.119 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.651 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.651 : 220-You are user number 2 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.651 : 220-Local time is now 20:36. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.651 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.652 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.652 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.653 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.905 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:53.905 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:54.281 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:54.282 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:54.641 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:54.641 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:55.009 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:55.009 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:55.365 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:55.365 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:55.618 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:55.957 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:56.232 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:36:56.232 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:56.233 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:56.589 : 227 Entering Passive Mode (178,33,49,68,79,163)
+INFO [FTPControlSocket] 24 sie 2013 20:36:56.589 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:56.670 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:56.730 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:36:58.878 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.334 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.334 : 226 2.597 seconds (measured here), 121.54 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.411 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.470 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:36:59.470 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.471 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.530 : 227 Entering Passive Mode (178,33,49,68,154,205)
+INFO [FTPControlSocket] 24 sie 2013 20:36:59.530 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.589 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.649 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:36:59.651 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.747 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.747 : 226 0.090 seconds (measured here), 40.06 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.750 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.810 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:36:59.810 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.810 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.870 : 227 Entering Passive Mode (178,33,49,68,8,241)
+INFO [FTPControlSocket] 24 sie 2013 20:36:59.870 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.931 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 20:36:59.992 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:36:59.993 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.067 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.068 : 226 0.070 seconds (measured here), 16.49 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.069 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.129 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:37:00.129 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.129 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.189 : 227 Entering Passive Mode (178,33,49,68,49,182)
+INFO [FTPControlSocket] 24 sie 2013 20:37:00.189 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.249 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.313 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:37:00.314 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.379 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.379 : 226 0.064 seconds (measured here), 62.54 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.380 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.439 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:37:00.440 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.440 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.499 : 227 Entering Passive Mode (178,33,49,68,59,38)
+INFO [FTPControlSocket] 24 sie 2013 20:37:00.499 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.559 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.624 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:37:00.630 : Transferred 122 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.631 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:00.632 : 226 0.000 seconds (measured here), 2.53 Mbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.411 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.496 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:37:18.496 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.496 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.556 : 227 Entering Passive Mode (178,33,49,68,158,128)
+INFO [FTPControlSocket] 24 sie 2013 20:37:18.557 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.619 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.680 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:37:18.681 : Transferred 134 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.742 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.743 : 226 0.061 seconds (measured here), 2.16 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.745 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.809 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:37:18.809 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.809 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.870 : 227 Entering Passive Mode (178,33,49,68,111,141)
+INFO [FTPControlSocket] 24 sie 2013 20:37:18.871 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.932 : ---> STOR /logs/2013-08-24_20:37:18_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:18.994 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:37:18.996 : Transferred 11331 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:19.174 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:19.175 : 226 0.173 seconds (measured here), 63.78 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:19.175 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:19.238 : 221-Goodbye. You uploaded 332 and downloaded 1 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 20:37:19.239 : 221 Logout.
+DEBUG [FTPClient] 24 sie 2013 20:38:45.877 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 20:38:45.880 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.014 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.014 : 220-You are user number 2 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.015 : 220-Local time is now 20:38. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.015 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.015 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.016 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.017 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.081 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.081 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.161 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.169 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.229 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.229 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.300 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.300 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.359 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.359 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.418 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.788 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.849 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:38:46.849 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.850 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.912 : 227 Entering Passive Mode (178,33,49,68,26,134)
+INFO [FTPControlSocket] 24 sie 2013 20:38:46.912 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:46.976 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:47.040 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:38:49.159 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:49.609 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:49.609 : 226 2.567 seconds (measured here), 122.96 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:49.681 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:49.740 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:38:49.740 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:49.741 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:49.800 : 227 Entering Passive Mode (178,33,49,68,225,76)
+INFO [FTPControlSocket] 24 sie 2013 20:38:49.800 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:49.861 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:49.921 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:38:49.922 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.022 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.022 : 226 0.091 seconds (measured here), 39.50 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.024 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.085 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:38:50.085 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.085 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.145 : 227 Entering Passive Mode (178,33,49,68,62,173)
+INFO [FTPControlSocket] 24 sie 2013 20:38:50.145 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.208 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.269 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:38:50.270 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.341 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.341 : 226 0.070 seconds (measured here), 16.49 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.342 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.402 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:38:50.402 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.402 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.463 : 227 Entering Passive Mode (178,33,49,68,198,39)
+INFO [FTPControlSocket] 24 sie 2013 20:38:50.464 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.524 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.585 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:38:50.586 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.650 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.651 : 226 0.061 seconds (measured here), 65.97 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.652 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.711 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:38:50.711 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.711 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.770 : 227 Entering Passive Mode (178,33,49,68,244,213)
+INFO [FTPControlSocket] 24 sie 2013 20:38:50.770 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.834 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.893 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:38:50.901 : Transferred 0 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:38:50.902 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.028 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.088 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:39:08.088 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.088 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.148 : 227 Entering Passive Mode (178,33,49,68,241,255)
+INFO [FTPControlSocket] 24 sie 2013 20:39:08.148 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.210 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.272 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:39:08.274 : Transferred 0 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.335 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.338 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.396 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 20:39:08.396 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.396 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.455 : 227 Entering Passive Mode (178,33,49,68,149,115)
+INFO [FTPControlSocket] 24 sie 2013 20:39:08.456 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.515 : ---> STOR /logs/2013-08-24_20:39:08_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.577 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 20:39:08.579 : Transferred 13982 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.779 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.780 : 226 0.198 seconds (measured here), 69.03 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.780 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.839 : 221-Goodbye. You uploaded 335 and downloaded 0 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 20:39:08.839 : 221 Logout.
+DEBUG [FTPClient] 24 sie 2013 21:13:54.100 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 21:13:54.103 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.237 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.238 : 220-You are user number 2 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.238 : 220-Local time is now 21:13. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.239 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.239 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.239 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.240 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.305 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.305 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.385 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.386 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.446 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.446 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.506 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.506 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.565 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.565 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.625 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:54.989 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:55.049 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:13:55.049 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:55.050 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:55.110 : 227 Entering Passive Mode (178,33,49,68,148,91)
+INFO [FTPControlSocket] 24 sie 2013 21:13:55.111 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:55.177 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:55.239 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:13:57.376 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:57.834 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:57.834 : 226 2.588 seconds (measured here), 121.98 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:57.907 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:57.979 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:13:57.979 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:57.979 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.038 : 227 Entering Passive Mode (178,33,49,68,99,158)
+INFO [FTPControlSocket] 24 sie 2013 21:13:58.038 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.101 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.161 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:13:58.162 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.255 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.256 : 226 0.090 seconds (measured here), 40.16 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.258 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.318 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:13:58.318 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.319 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.382 : 227 Entering Passive Mode (178,33,49,68,221,216)
+INFO [FTPControlSocket] 24 sie 2013 21:13:58.383 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.442 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.503 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:13:58.504 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.576 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.576 : 226 0.070 seconds (measured here), 16.41 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.578 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.636 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:13:58.637 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.637 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.701 : 227 Entering Passive Mode (178,33,49,68,212,136)
+INFO [FTPControlSocket] 24 sie 2013 21:13:58.701 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.760 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.820 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:13:58.821 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.888 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.888 : 226 0.060 seconds (measured here), 66.81 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.890 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.948 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:13:58.949 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:58.949 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:59.009 : 227 Entering Passive Mode (178,33,49,68,147,26)
+INFO [FTPControlSocket] 24 sie 2013 21:13:59.009 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:59.070 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:59.130 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:13:59.137 : Transferred 0 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:13:59.138 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:02.669 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:02.728 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:14:02.729 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:02.729 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:02.788 : 227 Entering Passive Mode (178,33,49,68,69,99)
+INFO [FTPControlSocket] 24 sie 2013 21:14:02.788 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:02.848 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:02.908 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:14:02.909 : Transferred 0 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:02.977 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:02.980 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.040 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:14:03.040 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.041 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.099 : 227 Entering Passive Mode (178,33,49,68,179,121)
+INFO [FTPControlSocket] 24 sie 2013 21:14:03.099 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.161 : ---> STOR /logs/2013-08-24_21:14:02_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.225 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:14:03.227 : Transferred 16633 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.439 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.439 : 226 0.214 seconds (measured here), 75.83 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.439 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.498 : 221-Goodbye. You uploaded 337 and downloaded 0 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 21:14:03.498 : 221 Logout.
+DEBUG [FTPClient] 24 sie 2013 21:19:27.955 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 21:19:27.957 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.085 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.086 : 220-You are user number 2 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.086 : 220-Local time is now 21:19. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.086 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.087 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.087 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.090 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.152 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.153 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.230 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.231 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.290 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.291 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.349 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.349 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.409 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.410 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.470 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.839 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.896 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:19:28.897 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.897 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:28.957 : 227 Entering Passive Mode (178,33,49,68,92,34)
+INFO [FTPControlSocket] 24 sie 2013 21:19:28.958 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:29.020 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:29.080 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:19:31.223 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:31.671 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:31.672 : 226 2.586 seconds (measured here), 122.03 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:31.750 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:31.809 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:19:31.809 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:31.809 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:31.869 : 227 Entering Passive Mode (178,33,49,68,89,124)
+INFO [FTPControlSocket] 24 sie 2013 21:19:31.869 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:31.930 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:31.990 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:19:31.992 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.084 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.085 : 226 0.091 seconds (measured here), 39.71 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.087 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.146 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:19:32.147 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.147 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.206 : 227 Entering Passive Mode (178,33,49,68,139,7)
+INFO [FTPControlSocket] 24 sie 2013 21:19:32.207 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.273 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.340 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:19:32.341 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.415 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.415 : 226 0.075 seconds (measured here), 15.33 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.416 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.475 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:19:32.476 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.476 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.534 : 227 Entering Passive Mode (178,33,49,68,124,250)
+INFO [FTPControlSocket] 24 sie 2013 21:19:32.535 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.596 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.657 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:19:32.659 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.726 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.727 : 226 0.061 seconds (measured here), 65.21 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.729 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.788 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:19:32.789 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.789 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.848 : 227 Entering Passive Mode (178,33,49,68,9,250)
+INFO [FTPControlSocket] 24 sie 2013 21:19:32.849 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.908 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.968 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:19:32.975 : Transferred 0 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:32.975 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.385 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.444 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:19:37.445 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.445 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.503 : 227 Entering Passive Mode (178,33,49,68,77,15)
+INFO [FTPControlSocket] 24 sie 2013 21:19:37.503 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.564 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.624 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:19:37.625 : Transferred 0 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.689 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.692 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.758 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:19:37.758 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.758 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.817 : 227 Entering Passive Mode (178,33,49,68,117,108)
+INFO [FTPControlSocket] 24 sie 2013 21:19:37.817 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.879 : ---> STOR /logs/2013-08-24_21:19:37_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:37.942 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:19:37.943 : Transferred 19284 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:38.178 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:38.178 : 226 0.233 seconds (measured here), 80.88 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:38.178 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:38.237 : 221-Goodbye. You uploaded 340 and downloaded 0 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 21:19:38.237 : 221 Logout.
+DEBUG [FTPClient] 24 sie 2013 21:21:53.109 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 21:21:53.111 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.243 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.244 : 220-You are user number 2 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.244 : 220-Local time is now 21:21. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.244 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.244 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.245 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.246 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.312 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.312 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.399 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.400 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.461 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.461 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.522 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.522 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.581 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.581 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:53.641 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:54.009 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:54.068 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:21:54.068 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:54.069 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:54.127 : 227 Entering Passive Mode (178,33,49,68,110,41)
+INFO [FTPControlSocket] 24 sie 2013 21:21:54.127 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:54.193 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:54.255 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:21:56.397 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:56.854 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:56.855 : 226 2.594 seconds (measured here), 121.65 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:56.927 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:56.986 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:21:56.986 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:56.986 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.046 : 227 Entering Passive Mode (178,33,49,68,127,205)
+INFO [FTPControlSocket] 24 sie 2013 21:21:57.046 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.107 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.167 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:21:57.169 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.263 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.264 : 226 0.089 seconds (measured here), 40.18 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.266 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.324 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:21:57.324 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.325 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.384 : 227 Entering Passive Mode (178,33,49,68,8,25)
+INFO [FTPControlSocket] 24 sie 2013 21:21:57.384 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.445 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.509 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:21:57.510 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.584 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.584 : 226 0.070 seconds (measured here), 16.49 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.586 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.645 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:21:57.645 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.645 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.706 : 227 Entering Passive Mode (178,33,49,68,213,192)
+INFO [FTPControlSocket] 24 sie 2013 21:21:57.706 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.767 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.827 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:21:57.829 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.896 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.896 : 226 0.060 seconds (measured here), 66.12 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.898 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.959 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:21:57.959 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:57.960 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:58.018 : 227 Entering Passive Mode (178,33,49,68,219,177)
+INFO [FTPControlSocket] 24 sie 2013 21:21:58.019 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:58.079 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:58.142 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:21:58.145 : Transferred 0 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:58.145 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.479 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.539 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:21:59.539 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.539 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.598 : 227 Entering Passive Mode (178,33,49,68,23,110)
+INFO [FTPControlSocket] 24 sie 2013 21:21:59.598 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.661 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.722 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:21:59.723 : Transferred 13 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.789 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.789 : 226 0.059 seconds (measured here), 220.71 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.792 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.851 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:21:59.851 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.851 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.910 : 227 Entering Passive Mode (178,33,49,68,148,228)
+INFO [FTPControlSocket] 24 sie 2013 21:21:59.910 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:21:59.972 : ---> STOR /logs/2013-08-24_21:21:59_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 21:22:00.034 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:22:00.035 : Transferred 21935 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:22:00.291 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:22:00.291 : 226 0.252 seconds (measured here), 85.05 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:22:00.291 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 21:22:00.350 : 221-Goodbye. You uploaded 342 and downloaded 0 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 21:22:00.350 : 221 Logout.
+DEBUG [FTPClient] 24 sie 2013 21:25:00.277 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 21:25:00.280 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.409 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.409 : 220-You are user number 2 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.410 : 220-Local time is now 21:24. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.410 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.410 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.410 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.411 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.476 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.477 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.563 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.564 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.623 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.623 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.682 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.682 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.741 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.741 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:00.800 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:01.164 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:01.222 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:25:01.222 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:01.223 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:01.282 : 227 Entering Passive Mode (178,33,49,68,108,34)
+INFO [FTPControlSocket] 24 sie 2013 21:25:01.282 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:01.344 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:01.405 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:25:03.534 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.009 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.010 : 226 2.574 seconds (measured here), 122.62 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.084 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.179 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:25:04.179 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.179 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.239 : 227 Entering Passive Mode (178,33,49,68,199,128)
+INFO [FTPControlSocket] 24 sie 2013 21:25:04.239 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.302 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.361 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:25:04.363 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.459 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.459 : 226 0.090 seconds (measured here), 40.01 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.462 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.523 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:25:04.523 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.523 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.582 : 227 Entering Passive Mode (178,33,49,68,112,235)
+INFO [FTPControlSocket] 24 sie 2013 21:25:04.583 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.644 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.707 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:25:04.708 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.779 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.779 : 226 0.072 seconds (measured here), 15.96 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.780 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.839 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:25:04.839 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.840 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.899 : 227 Entering Passive Mode (178,33,49,68,204,50)
+INFO [FTPControlSocket] 24 sie 2013 21:25:04.900 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:04.959 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.019 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:25:05.020 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.088 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.089 : 226 0.060 seconds (measured here), 66.72 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.090 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.149 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:25:05.149 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.150 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.208 : 227 Entering Passive Mode (178,33,49,68,165,200)
+INFO [FTPControlSocket] 24 sie 2013 21:25:05.209 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.269 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.328 : 150-Accepted data connection
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.329 : 150 The computer is your friend. Trust the computer
+DEBUG [FTPClient] 24 sie 2013 21:25:05.339 : Transferred 0 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:05.340 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.224 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.283 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:25:07.283 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.283 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.345 : 227 Entering Passive Mode (178,33,49,68,174,208)
+INFO [FTPControlSocket] 24 sie 2013 21:25:07.345 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.406 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.468 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:25:07.469 : Transferred 17 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.535 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.535 : 226 0.061 seconds (measured here), 277.44 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.538 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.598 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:25:07.598 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.599 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.658 : 227 Entering Passive Mode (178,33,49,68,232,229)
+INFO [FTPControlSocket] 24 sie 2013 21:25:07.658 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.718 : ---> STOR /logs/2013-08-24_21:25:07_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:07.781 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:25:07.782 : Transferred 24586 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:08.056 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:08.056 : 226 0.274 seconds (measured here), 87.75 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:08.056 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:08.115 : 221-Goodbye. You uploaded 345 and downloaded 0 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 21:25:08.115 : 221 Logout.
+DEBUG [FTPClient] 24 sie 2013 21:28:48.861 : Class: pl.mbassara.kolowrotek.MyFTPClient
+Location: file:/F:/Maciek/programowanie/Java/kolowrotek/bin/
+Version: 2.3.0
+Build timestamp: 26-Aug-2011 13:52:07 EST
+Java version: 1.6.0_38
+CLASSPATH: F:\Maciek\programowanie\Java\kolowrotek\bin;F:\Maciek\programowanie\Java\kolowrotek\lib\edtftpj.jar;F:\Maciek\programowanie\Java\kolowrotek\lib\mail.jar
+OS name: Windows 8
+OS arch: x86
+OS version: 6.2
+
+DEBUG [FTPClient] 24 sie 2013 21:28:48.862 : Connecting to ftp.gim2brzeszcze.o12.pl/178.33.49.68:21
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:48.999 : 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.000 : 220-You are user number 2 of 50 allowed.
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.000 : 220-Local time is now 21:28. Server port: 21.
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.000 : 220-This is a private system - No anonymous login
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.001 : 220-IPv6 connections are also welcome on this server.
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.001 : 220 You will be disconnected after 15 minutes of inactivity.
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.003 : ---> USER galeriakolowrotka@gim2brzeszcze.o12.pl
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.063 : 331 User galeriakolowrotka@gim2brzeszcze.o12.pl OK. Password required
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.063 : ---> PASS ********
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.144 : 230 OK. Current restricted directory is /
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.145 : ---> TYPE I
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.204 : 200 TYPE is now 8-bit binary
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.204 : ---> MKD /2013-2014/test98
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.265 : 257 "/2013-2014/test98" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.265 : ---> MKD /2013-2014/test98/images
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.324 : 257 "/2013-2014/test98/images" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.324 : ---> MKD /2013-2014/test98/thumbs
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.385 : 257 "/2013-2014/test98/thumbs" : The directory was successfully created
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.744 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.804 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:28:49.804 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.804 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.864 : 227 Entering Passive Mode (178,33,49,68,99,225)
+INFO [FTPControlSocket] 24 sie 2013 21:28:49.864 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.926 : ---> STOR /2013-2014/test98/images/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:49.988 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:28:52.122 : Transferred 323201 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.572 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.572 : 226 2.580 seconds (measured here), 122.34 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.639 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.698 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:28:52.699 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.699 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.760 : 227 Entering Passive Mode (178,33,49,68,21,221)
+INFO [FTPControlSocket] 24 sie 2013 21:28:52.760 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.822 : ---> STOR /2013-2014/test98/thumbs/1.jpg
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.884 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:28:52.885 : Transferred 3682 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.984 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.985 : 226 0.090 seconds (measured here), 39.81 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:52.987 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.046 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:28:53.046 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.047 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.405 : 227 Entering Passive Mode (178,33,49,68,35,240)
+INFO [FTPControlSocket] 24 sie 2013 21:28:53.406 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.467 : ---> STOR /2013-2014/test98/gallery.xml
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.529 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:28:53.530 : Transferred 1176 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.606 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.606 : 226 0.072 seconds (measured here), 15.84 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.607 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.669 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:28:53.670 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.670 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.732 : 227 Entering Passive Mode (178,33,49,68,177,209)
+INFO [FTPControlSocket] 24 sie 2013 21:28:53.732 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.792 : ---> STOR /2013-2014/test98/party_name
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.853 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:28:53.854 : Transferred 4 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.916 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.917 : 226 0.060 seconds (measured here), 66.23 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.918 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:53.999 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:28:54.000 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:54.000 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:54.061 : 227 Entering Passive Mode (178,33,49,68,66,86)
+INFO [FTPControlSocket] 24 sie 2013 21:28:54.061 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:54.121 : ---> RETR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:54.180 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:28:54.187 : Transferred 0 bytes from remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:54.188 : 226 File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.014 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.073 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:28:55.074 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.074 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.132 : 227 Entering Passive Mode (178,33,49,68,33,18)
+INFO [FTPControlSocket] 24 sie 2013 21:28:55.132 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.194 : ---> STOR /2013-2014/index.csv
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.254 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:28:55.255 : Transferred 12 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.319 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.320 : 226 0.060 seconds (measured here), 200.45 bytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.323 : ---> PWD
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.382 : 257 "/" is your current location
+DEBUG [FTPClient] 24 sie 2013 21:28:55.382 : Attempt #1
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.383 : ---> PASV
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.442 : 227 Entering Passive Mode (178,33,49,68,68,21)
+INFO [FTPControlSocket] 24 sie 2013 21:28:55.442 : Substituting server supplied IP (178.33.49.68) with remote host IP (178.33.49.68)
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.505 : ---> STOR /logs/2013-08-24_21:28:55_FTPManager.log
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.569 : 150 Accepted data connection
+DEBUG [FTPClient] 24 sie 2013 21:28:55.570 : Transferred 27237 bytes to remote host
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.871 : 226-File successfully transferred
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.871 : 226 0.296 seconds (measured here), 89.90 Kbytes per second
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.871 : ---> QUIT
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.930 : 221-Goodbye. You uploaded 347 and downloaded 0 kbytes.
+DEBUG [FTPControlSocket] 24 sie 2013 21:28:55.930 : 221 Logout.
