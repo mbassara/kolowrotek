@@ -1,0 +1,974 @@
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 19:56:28 CEST 2013 #
+	##############################################
+
+LOG no.		11
+TIME:		19:57:30
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		14
+TIME:		19:57:30
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		15
+TIME:		19:57:30
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		18
+TIME:		19:57:31
+LEVEL:		WARNING
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	com.enterprisedt.net.ftp.FTPException: 550 Can't create directory: No such file or directory
+	at com.enterprisedt.net.ftp.FTPControlSocket.validateReply(FTPControlSocket.java:1223)
+	at com.enterprisedt.net.ftp.FTPClient.mkdir(FTPClient.java:3936)
+	at pl.mbassara.kolowrotek.FTPManager.generateImages(FTPManager.java:78)
+	at pl.mbassara.kolowrotek.FTPManager.generateAll(FTPManager.java:258)
+	at pl.mbassara.kolowrotek.FTPManager.doInBackground(FTPManager.java:493)
+	at pl.mbassara.kolowrotek.FTPManager.doInBackground(FTPManager.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:09:31 CEST 2013 #
+	##############################################
+
+LOG no.		12
+TIME:		20:10:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		15
+TIME:		20:10:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		16
+TIME:		20:10:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		20
+TIME:		20:10:12
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		21
+TIME:		20:10:12
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		23
+TIME:		20:10:12
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		24
+TIME:		20:10:12
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		25
+TIME:		20:10:12
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		28
+TIME:		20:10:15
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		29
+TIME:		20:10:15
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		30
+TIME:		20:10:15
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		31
+TIME:		20:10:15
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		32
+TIME:		20:10:15
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		37
+TIME:		20:10:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: na końcu
+
+LOG no.		38
+TIME:		20:10:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 0
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:15:41 CEST 2013 #
+	##############################################
+
+LOG no.		8
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		11
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		12
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		16
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		17
+TIME:		20:16:07
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		19
+TIME:		20:16:07
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		20
+TIME:		20:16:07
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		21
+TIME:		20:16:07
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		24
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		25
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		26
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		27
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		28
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		33
+TIME:		20:16:19
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: między 1. i 2.
+
+LOG no.		34
+TIME:		20:16:19
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 1
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:35:22 CEST 2013 #
+	##############################################
+
+LOG no.		8
+TIME:		20:35:51
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		11
+TIME:		20:35:51
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		12
+TIME:		20:35:51
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		15
+TIME:		20:35:52
+LEVEL:		WARNING
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	com.enterprisedt.net.ftp.FTPException: 550 Can't create directory: File exists
+	at com.enterprisedt.net.ftp.FTPControlSocket.validateReply(FTPControlSocket.java:1223)
+	at com.enterprisedt.net.ftp.FTPClient.mkdir(FTPClient.java:3936)
+	at pl.mbassara.kolowrotek.FTPManager.generateImages(FTPManager.java:83)
+	at pl.mbassara.kolowrotek.FTPManager.generateAll(FTPManager.java:283)
+	at pl.mbassara.kolowrotek.FTPManager.doInBackground(FTPManager.java:543)
+	at pl.mbassara.kolowrotek.FTPManager.doInBackground(FTPManager.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:36:21 CEST 2013 #
+	##############################################
+
+LOG no.		8
+TIME:		20:36:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		11
+TIME:		20:36:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		12
+TIME:		20:36:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		17
+TIME:		20:36:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		18
+TIME:		20:36:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		19
+TIME:		20:36:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		20
+TIME:		20:36:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		21
+TIME:		20:36:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		24
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		25
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		26
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		27
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		28
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		33
+TIME:		20:37:18
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: między 2. i 3.
+
+LOG no.		34
+TIME:		20:37:18
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 2
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:38:28 CEST 2013 #
+	##############################################
+
+LOG no.		8
+TIME:		20:38:45
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		11
+TIME:		20:38:45
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		12
+TIME:		20:38:45
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		16
+TIME:		20:38:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		17
+TIME:		20:38:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		19
+TIME:		20:38:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		20
+TIME:		20:38:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		21
+TIME:		20:38:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		24
+TIME:		20:38:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		25
+TIME:		20:38:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		26
+TIME:		20:38:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		27
+TIME:		20:38:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		28
+TIME:		20:38:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		33
+TIME:		20:39:08
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: na końcu
+
+LOG no.		34
+TIME:		20:39:08
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 0
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:13:32 CEST 2013 #
+	##############################################
+
+LOG no.		8
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		11
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		12
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		16
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		17
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		18
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		19
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		20
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		23
+TIME:		21:13:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		24
+TIME:		21:13:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		25
+TIME:		21:13:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		26
+TIME:		21:13:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		27
+TIME:		21:13:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		32
+TIME:		21:14:02
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: na końcu
+
+LOG no.		33
+TIME:		21:14:02
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 0
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:19:09 CEST 2013 #
+	##############################################
+
+LOG no.		9
+TIME:		21:19:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		12
+TIME:		21:19:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		13
+TIME:		21:19:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		17
+TIME:		21:19:28
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		18
+TIME:		21:19:28
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		19
+TIME:		21:19:28
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		20
+TIME:		21:19:28
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		21
+TIME:		21:19:28
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		24
+TIME:		21:19:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		25
+TIME:		21:19:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		26
+TIME:		21:19:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		27
+TIME:		21:19:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		28
+TIME:		21:19:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		33
+TIME:		21:19:37
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: na końcu
+
+LOG no.		34
+TIME:		21:19:37
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 0
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:21:35 CEST 2013 #
+	##############################################
+
+LOG no.		8
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		11
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		12
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		16
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		17
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		18
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		19
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		20
+TIME:		21:21:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		23
+TIME:		21:21:56
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		24
+TIME:		21:21:56
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		25
+TIME:		21:21:56
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		26
+TIME:		21:21:56
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		27
+TIME:		21:21:56
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		32
+TIME:		21:21:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: na końcu
+
+LOG no.		33
+TIME:		21:21:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 0
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:24:41 CEST 2013 #
+	##############################################
+
+LOG no.		8
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		11
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		12
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		16
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		17
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		18
+TIME:		21:25:01
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		19
+TIME:		21:25:01
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		20
+TIME:		21:25:01
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		23
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		24
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		25
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		26
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		27
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		32
+TIME:		21:25:07
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: na końcu
+
+LOG no.		33
+TIME:		21:25:07
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 0
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:28:28 CEST 2013 #
+	##############################################
+
+LOG no.		8
+TIME:		21:28:48
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.<init>()
+MESSAGE:	FTPManager created
+
+LOG no.		11
+TIME:		21:28:48
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.doInBackground()
+MESSAGE:	starting generating_mode with parameters:
+partyName:	test
+year:		2013/2014
+files:		1
+
+LOG no.		12
+TIME:		21:28:48
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.generateAll()
+MESSAGE:	in function generateAll()
+
+LOG no.		16
+TIME:		21:28:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		17
+TIME:		21:28:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		18
+TIME:		21:28:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		19
+TIME:		21:28:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 323201 bytes
+
+LOG no.		20
+TIME:		21:28:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 59342cbe8fc535d32c8f5beb624979d5
+
+LOG no.		23
+TIME:		21:28:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	resizing file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg
+
+LOG no.		24
+TIME:		21:28:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	Graphics2D.drawImage() result: true
+
+LOG no.		25
+TIME:		21:28:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	ImageIO.write() result: true
+
+LOG no.		26
+TIME:		21:28:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	file: game-of-thrones-ned-stark-wallpaper-1366x768.jpg has been successfully resized to 3682 bytes
+
+LOG no.		27
+TIME:		21:28:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.TempImageResizer.resizeImage()
+MESSAGE:	md5sum: 49840bff55573d1346e506a49e494353
+
+LOG no.		32
+TIME:		21:28:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	STRING position of new party: na końcu
+
+LOG no.		33
+TIME:		21:28:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManager.showPartyPositionDialog()
+MESSAGE:	INT position of new party: 0
+

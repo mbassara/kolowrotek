@@ -1,0 +1,1503 @@
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 19:56:28 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		19:56:33
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		19:56:33
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		2
+TIME:		19:56:33
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		3
+TIME:		19:56:37
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		4
+TIME:		19:56:43
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		19:56:43
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		19:56:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		7
+TIME:		19:57:08
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		8
+TIME:		19:57:08
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		9
+TIME:		19:57:13
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		10
+TIME:		19:57:30
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		12
+TIME:		19:57:30
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		13
+TIME:		19:57:30
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		16
+TIME:		19:57:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		17
+TIME:		19:57:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		21
+TIME:		19:57:43
+LEVEL:		WARNING
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	dir for entered party name already exists
+
+LOG no.		22
+TIME:		19:57:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	exitButton pressed
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:09:31 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		20:09:34
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		20:09:35
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		2
+TIME:		20:09:36
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		3
+TIME:		20:09:36
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		4
+TIME:		20:09:50
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		20:09:50
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		20:09:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		20:09:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		8
+TIME:		20:09:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		9
+TIME:		20:09:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		10
+TIME:		20:09:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		11
+TIME:		20:10:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		13
+TIME:		20:10:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		14
+TIME:		20:10:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		17
+TIME:		20:10:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		18
+TIME:		20:10:12
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		19
+TIME:		20:10:12
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		26
+TIME:		20:10:15
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		27
+TIME:		20:10:15
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		33
+TIME:		20:10:18
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		34
+TIME:		20:10:18
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		35
+TIME:		20:10:19
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		36
+TIME:		20:10:19
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		39
+TIME:		20:10:32
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		40
+TIME:		20:10:32
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+LOG no.		42
+TIME:		20:12:12
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	exitButton pressed
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:15:41 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		20:15:43
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		20:15:45
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		2
+TIME:		20:15:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		3
+TIME:		20:15:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		4
+TIME:		20:15:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		20:15:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		20:15:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		9
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		10
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		13
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		14
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		15
+TIME:		20:16:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		22
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		23
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		29
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		30
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		31
+TIME:		20:16:10
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		32
+TIME:		20:16:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		35
+TIME:		20:16:19
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		36
+TIME:		20:16:19
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:35:22 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		20:35:24
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		20:35:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		2
+TIME:		20:35:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		3
+TIME:		20:35:28
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		4
+TIME:		20:35:37
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		20:35:37
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		20:35:43
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		20:35:51
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		9
+TIME:		20:35:51
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		10
+TIME:		20:35:51
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		13
+TIME:		20:35:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		14
+TIME:		20:35:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		18
+TIME:		20:35:56
+LEVEL:		WARNING
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	dir for entered party name already exists
+
+LOG no.		19
+TIME:		20:35:58
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	exitButton pressed
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:36:21 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		20:36:23
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		20:36:25
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		2
+TIME:		20:36:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		3
+TIME:		20:36:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		4
+TIME:		20:36:38
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		20:36:38
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		20:36:42
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		20:36:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		9
+TIME:		20:36:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		10
+TIME:		20:36:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		13
+TIME:		20:36:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		14
+TIME:		20:36:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		16
+TIME:		20:36:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		22
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		23
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		29
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		30
+TIME:		20:36:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		31
+TIME:		20:37:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		32
+TIME:		20:37:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		35
+TIME:		20:37:18
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		36
+TIME:		20:37:19
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 20:38:28 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		20:38:29
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		20:38:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		2
+TIME:		20:38:33
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		3
+TIME:		20:38:33
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		4
+TIME:		20:38:38
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		20:38:38
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		20:38:40
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		20:38:45
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		9
+TIME:		20:38:45
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		10
+TIME:		20:38:45
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		13
+TIME:		20:38:45
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		14
+TIME:		20:38:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		15
+TIME:		20:38:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		22
+TIME:		20:38:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		23
+TIME:		20:38:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		29
+TIME:		20:38:50
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		30
+TIME:		20:38:50
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		31
+TIME:		20:38:50
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		32
+TIME:		20:38:50
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		35
+TIME:		20:39:08
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		36
+TIME:		20:39:08
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:13:32 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		21:13:33
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		21:13:35
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		2
+TIME:		21:13:37
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		3
+TIME:		21:13:37
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		4
+TIME:		21:13:47
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		21:13:47
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		21:13:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		9
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		10
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		13
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		14
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		15
+TIME:		21:13:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		21
+TIME:		21:13:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		22
+TIME:		21:13:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		28
+TIME:		21:13:58
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		29
+TIME:		21:13:58
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		30
+TIME:		21:13:58
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		31
+TIME:		21:13:58
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		34
+TIME:		21:14:03
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		35
+TIME:		21:14:03
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+LOG no.		36
+TIME:		21:14:06
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	exitButton pressed
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:19:09 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		21:19:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		21:19:11
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		2
+TIME:		21:19:14
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		3
+TIME:		21:19:14
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		4
+TIME:		21:19:14
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		5
+TIME:		21:19:21
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		6
+TIME:		21:19:21
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		7
+TIME:		21:19:22
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		8
+TIME:		21:19:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		10
+TIME:		21:19:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		11
+TIME:		21:19:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		14
+TIME:		21:19:27
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		15
+TIME:		21:19:28
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		16
+TIME:		21:19:28
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		22
+TIME:		21:19:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		23
+TIME:		21:19:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		29
+TIME:		21:19:32
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		30
+TIME:		21:19:32
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		31
+TIME:		21:19:32
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		32
+TIME:		21:19:32
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		35
+TIME:		21:19:37
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		36
+TIME:		21:19:38
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:21:35 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		21:21:36
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		21:21:38
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		2
+TIME:		21:21:40
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		3
+TIME:		21:21:40
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		4
+TIME:		21:21:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		21:21:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		21:21:48
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		9
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		10
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		13
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		14
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		15
+TIME:		21:21:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		21
+TIME:		21:21:56
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		22
+TIME:		21:21:56
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		28
+TIME:		21:21:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		29
+TIME:		21:21:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		30
+TIME:		21:21:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		31
+TIME:		21:21:57
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		34
+TIME:		21:21:59
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		35
+TIME:		21:22:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:24:41 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		21:24:43
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		21:24:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		2
+TIME:		21:24:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		3
+TIME:		21:24:46
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		4
+TIME:		21:24:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		21:24:54
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		21:24:56
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		9
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		10
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		13
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		14
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		15
+TIME:		21:25:00
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		21
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		22
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		28
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		29
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		30
+TIME:		21:25:04
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		31
+TIME:		21:25:05
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		34
+TIME:		21:25:07
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		35
+TIME:		21:25:08
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:28:28 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		21:28:30
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	genModeButtonPressed
+
+LOG no.		1
+TIME:		21:28:31
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	chooseImagesButton pressed
+
+LOG no.		2
+TIME:		21:28:33
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		3
+TIME:		21:28:33
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
+LOG no.		4
+TIME:		21:28:39
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files selected
+
+LOG no.		5
+TIME:		21:28:39
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	1 files in filesList
+
+LOG no.		6
+TIME:		21:28:42
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.removeUpdate()
+MESSAGE:	party name changed
+
+LOG no.		7
+TIME:		21:28:48
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	startButton pressed
+
+LOG no.		9
+TIME:		21:28:48
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode is ready to start
+
+LOG no.		10
+TIME:		21:28:48
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.actionPerformed()
+MESSAGE:	generating mode was executed
+
+LOG no.		13
+TIME:		21:28:48
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Łączenie z serwerem FTP.
+
+LOG no.		14
+TIME:		21:28:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Połączono.
+
+LOG no.		15
+TIME:		21:28:49
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - wysyłanie na serwer
+
+LOG no.		21
+TIME:		21:28:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - zapisany jako		/2013-2014/test98/images/1.jpg
+
+LOG no.		22
+TIME:		21:28:52
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - tworzenie miniatury
+
+LOG no.		28
+TIME:		21:28:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	game-of-thrones-ned-stark-wallpaper-1366x768.jpg - miniatura zapisana jako 	/2013-2014/test98/thumbs/1.jpg
+
+
+LOG no.		29
+TIME:		21:28:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Zdjęcia wygenerowane.
+
+LOG no.		30
+TIME:		21:28:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/gallery.xml wygenerowany.
+
+LOG no.		31
+TIME:		21:28:53
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/test98/party_name wygenerowany.
+
+LOG no.		34
+TIME:		21:28:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Plik	/2013-2014/index.csv uaktualniony.
+
+LOG no.		35
+TIME:		21:28:55
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.propertyChange()
+MESSAGE:	Gotowe.
+
+
+	##############################################
+	# LOG SESSION: Sat Aug 24 21:36:34 CEST 2013 #
+	##############################################
+
+LOG no.		0
+TIME:		21:36:39
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	GUI created
+
+LOG no.		1
+TIME:		21:36:39
+LEVEL:		INFO
+FROM:		pl.mbassara.kolowrotek.FTPManagerGUI.<init>()
+MESSAGE:	
+Computer's canonical name:	Maciek-K50IN-W8
+Computer's name:		Maciek-K50IN-W8
+Computer's IP adress:		83.29.227.171
+Computer's hostname:		bwd171.neoplus.adsl.tpnet.pl
+
+
